@@ -6,6 +6,22 @@ else
   echo "Homebrew already installed, skipping installation"
 fi
 
+echo "Installing fzf"
+if ! command -v fzf &> /dev/null
+then
+  brew install fzf
+else
+  echo "fzf already installed, skipping installation"
+fi
+
+echo "Installing zoxide"
+if ! command -v zoxide &> /dev/null
+then
+  brew install zoxide
+else
+  echo "zoxide already installed, skipping installation"
+fi
+
 brew install stow
 stow --adopt .
 
@@ -106,7 +122,7 @@ defaults write com.apple.dock persistent-others -array-add $downloads_folder
 
 # Set additional config
 defaults write com.apple.dock show-recents -int 0;
-defaults write com.apple.dock tilesize -int 55;
+defaults write com.apple.dock tilesize -int 45;
 defaults write com.apple.dock autohide -int 1;
 
 # Reset to show changes

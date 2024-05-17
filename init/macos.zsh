@@ -122,7 +122,7 @@ defaults write com.apple.dock persistent-others -array-add $downloads_folder
 
 # Set additional config
 defaults write com.apple.dock show-recents -int 0;
-defaults write com.apple.dock tilesize -int 45;
+defaults write com.apple.dock tilesize -int 50;
 defaults write com.apple.dock autohide -int 1;
 
 # Reset to show changes

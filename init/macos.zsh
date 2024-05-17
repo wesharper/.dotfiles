@@ -7,7 +7,7 @@ else
 fi
 
 brew install stow
-stow .
+stow --adopt .
 
 echo "Installing RobotoMono Nerd Font"
 if [ ! -f ~/Library/Fonts/RobotoMonoNerdFont-Bold.ttf ]; then

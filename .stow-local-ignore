@@ -1,0 +1,14 @@
+# version control
+\.git
+\.gitignore
+\.gitmodules
+
+# zsh tempfiles
+\.zcompdump-.*
+\.zsh_history
+
+# initialization scripts
+init
+
+# MacOS
+\.DS_store

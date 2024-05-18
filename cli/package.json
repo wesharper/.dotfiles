@@ -1,0 +1,16 @@
+{
+  "name": "dotfile-wizard",
+  "version": "1.0.0",
+  "description": "Personal dotfile configuration wizard",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Weston Harper",
+  "license": "ISC",
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "execa": "^9.1.0",
+    "picocolors": "^1.0.1"
+  }
+}

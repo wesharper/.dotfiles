@@ -12,3 +12,9 @@ init
 
 # MacOS
 \.DS_store
+
+# CLI
+cli
+
+# VS Code
+\.vscode

@@ -1,4 +1,7 @@
+# zsh
 .zcompdump
 .zcompdump*
 .zsh_history
+
+# MacOS
 .DS_Store

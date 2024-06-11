@@ -42,7 +42,7 @@ echo "Restarting zsh with adopted config..."
 sleep 2
 reset
 
-cd cli
+cd ~/dotfiles/cli
 nvm install
 npm install
 npm start

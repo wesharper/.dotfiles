@@ -1,0 +1,10 @@
+live_config_reload = true
+
+import = ["~/.config/alacritty/themes/tokyo_night.toml"]
+
+[shell]
+program = "/bin/zsh"
+args = ["-l"]
+
+[font]
+normal = { family = "RobotoMono Nerd Font", style = "Regular" }

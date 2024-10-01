@@ -53,7 +53,7 @@ bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
 
 # History
-HISTSIZE=100
+HISTSIZE=5000
 HISTFILE=$ZDOTDIR/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
@@ -76,6 +76,8 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias vim='nvim'
 alias zshconfig="code $ZDOTDIR/.zshrc"
+alias reload="source $ZDOTDIR/.zshrc"
+alias bs="code ~/dev/rockies/blake-street"
 
 # Shell integrations
 eval "$(fzf --zsh)"
@@ -84,6 +86,16 @@ eval "$(zoxide init --cmd cd zsh)"
 # Enable nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Configure pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Configure pipenv
+export PIPENV_VENV_IN_PROJECT=1
+export PIPENV_ROOT="$HOME/.local"
+[[ -d $PIPENV_ROOT/bin ]] && export PATH="$PIPENV_ROOT/bin:$PATH"
 
 # Autoloads correct node version
 autoload -U add-zsh-hook
@@ -119,11 +131,23 @@ export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 
 # pnpm
-export PNPM_HOME="/Users/westonharper/Library/pnpm"
+export PNPM_HOME="~/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+# rust/cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# pgrx (rust lib for developing pg extensions)
+export PKG_CONFIG_PATH=/opt/homebrew/opt/icu4c/lib/pkgconfig
+
+# pg
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
+# default editor
+export EDITOR="zed"
 
 # Supabase completions
 __supabase_debug()

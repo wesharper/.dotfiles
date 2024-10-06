@@ -7,9 +7,6 @@
 \.zcompdump-.*
 \.zsh_history
 
-# initialization scripts
-init
-
 # MacOS
 \.DS_store
 

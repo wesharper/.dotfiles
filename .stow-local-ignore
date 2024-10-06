@@ -4,7 +4,7 @@
 \.gitmodules
 
 # zsh tempfiles
-\.zcompdump-.*
+\.zcompdump.*
 \.zsh_history
 
 # MacOS
@@ -17,7 +17,7 @@ cli
 \.vscode
 
 # Zed
-zed/conversations
-zed/embeddings
-zed/prompts
-zed/.tmp*
+\.config/zed/conversations
+\.config/zed/embeddings
+\.config/zed/prompts
+\.config/zed/\.tmp.*

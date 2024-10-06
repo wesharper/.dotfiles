@@ -15,3 +15,9 @@ cli
 
 # VS Code
 \.vscode
+
+# Zed
+zed/conversations
+zed/embeddings
+zed/prompts
+zed/.tmp*

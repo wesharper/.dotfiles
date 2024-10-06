@@ -8,3 +8,7 @@ args = ["-l"]
 
 [font]
 normal = { family = "RobotoMono Nerd Font", style = "Regular" }
+size = 12
+
+[env]
+TERM = "xterm-256color"

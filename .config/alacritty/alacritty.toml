@@ -1,6 +1,6 @@
 live_config_reload = true
 
-import = ["~/.config/alacritty/themes/tokyo_night.toml"]
+import = ["~/.config/alacritty/themes/catppuccin-mocha.toml"]
 
 [shell]
 program = "/bin/zsh"

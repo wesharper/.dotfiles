@@ -40,8 +40,9 @@ fi
 
 # Load completions
 autoload -Uz compinit && compinit
-source $ZSH_PLUGINS/fzf-tab/fzf-tab.plugin.zsh
 
 # Load plugins
-source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source $ZSH_PLUGINS/fzf-tab/fzf-tab.plugin.zsh # must occur first in plugins list and after compinit
 source $ZSH_PLUGINS/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $ZSH_PLUGINS/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh

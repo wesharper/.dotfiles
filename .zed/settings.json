@@ -1,5 +1,10 @@
 {
   "file_types": {
     "Shell Script": [".aliases", ".aliases.local"]
+  },
+  "languages": {
+    "Shell Script": {
+      "tab_size": 2
+    }
   }
 }

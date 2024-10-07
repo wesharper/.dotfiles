@@ -20,5 +20,8 @@
   "features": {
     "inline_completion_provider": "none",
     "copilot": false
+  },
+  "file_types": {
+    "Shell Script": ["zsh/.aliases", "zsh/.aliases.*"]
   }
 }

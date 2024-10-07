@@ -7,3 +7,9 @@
 [submodule ".config/zsh/plugins/pure"]
 	path = .config/zsh/plugins/pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule ".config/zsh/plugins/zsh-autosuggestions"]
+	path = .config/zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule ".config/zsh/plugins/zsh-autocomplete"]
+	path = .config/zsh/plugins/zsh-autocomplete
+	url = https://github.com/marlonrichert/zsh-autocomplete.git

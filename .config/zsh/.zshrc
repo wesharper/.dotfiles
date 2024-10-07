@@ -23,7 +23,6 @@ if [ ! -d "$WORKSPACE" ]; then
    mkdir -pv "$(dirname $WORKSPACE)"
 fi
 
-
 # Completion styling
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"

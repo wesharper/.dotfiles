@@ -23,14 +23,25 @@ if [ ! -d "$WORKSPACE" ]; then
    mkdir -pv "$(dirname $WORKSPACE)"
 fi
 
-# Completion styling
-zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-zstyle ':completion:*' verbose true
-
-autoload -Uz compinit && compinit
+zstyle ':completion:*:git-checkout:*' sort false
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' menu no
 
 # Configure pure (zsh prompt)
-fpath+=($ZDOTDIR/plugins/pure)
+fpath+=($ZSH_PLUGINS/pure)
 autoload -U promptinit && promptinit
 prompt pure
+
+# Load completions from brew
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
+
+# Load completions
+autoload -Uz compinit && compinit
+source $ZSH_PLUGINS/fzf-tab/fzf-tab.plugin.zsh
+
+# Load plugins
+source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source $ZSH_PLUGINS/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh

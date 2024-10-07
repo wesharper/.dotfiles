@@ -9,7 +9,7 @@ export XDG_CACHE_HOME="${HOME}/.cache"
 export XDG_DATA_HOME="${HOME}/.local/share"
 export XDG_STATE_HOME="${HOME}/.local/state"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-export CUSTOM_PLUGINS="$ZDOTDIR/plugins"
+export ZSH_PLUGINS="$ZDOTDIR/plugins"
 
 # History
 export HISTFILE="$ZDOTDIR/.zsh_history"

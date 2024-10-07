@@ -16,6 +16,3 @@ export HISTFILE="$ZDOTDIR/.zsh_history"
 export HISTSIZE=5000
 export SAVEHIST=$HISTSIZE
 export HISTDUP=erase
-
-# Starship
-export STARSHIP_CONFIG="$ZDOTDIR/starship.toml"

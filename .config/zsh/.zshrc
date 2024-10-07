@@ -27,11 +27,6 @@ zstyle ':completion:*:git-checkout:*' sort false
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
 
-# Configure pure (zsh prompt)
-fpath+=($ZSH_PLUGINS/pure)
-autoload -U promptinit && promptinit
-prompt pure
-
 # Load completions from brew
 if type brew &>/dev/null
 then
@@ -41,7 +36,16 @@ fi
 # Load completions
 autoload -Uz compinit && compinit
 
-# Load plugins
+# Git module plugins
 source $ZSH_PLUGINS/fzf-tab/fzf-tab.plugin.zsh # must occur first in plugins list and after compinit
 source $ZSH_PLUGINS/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+
+# Hand-built or generated plugins
+source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
+source $ZSH_PLUGINS/supabase/supabase.plugin.zsh
+
+# Prompt
+fpath+=($ZSH_PLUGINS/pure)
+autoload -U promptinit; promptinit
+prompt pure

@@ -3,9 +3,10 @@
 \.gitignore
 \.gitmodules
 
-# zsh tempfiles
+# zsh
 \.zcompdump.*
 \.zsh_history
+\*.zwc
 
 # MacOS
 \.DS_store

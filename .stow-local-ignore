@@ -21,3 +21,6 @@ cli
 \.config/zed/embeddings
 \.config/zed/prompts
 \.config/zed/\.tmp.*
+
+# Docs
+README.md

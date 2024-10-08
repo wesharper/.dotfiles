@@ -44,6 +44,8 @@ source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 # Hand-built or generated plugins
 source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
 source $ZSH_PLUGINS/supabase/supabase.plugin.zsh
+source $ZSH_PLUGINS/asdf/asdf.plugin.zsh
+source $ZSH_PLUGINS/blake-street/blake-street.plugin.zsh
 
 # Prompt
 fpath+=($ZSH_PLUGINS/pure)

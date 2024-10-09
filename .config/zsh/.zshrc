@@ -46,6 +46,7 @@ source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
 source $ZSH_PLUGINS/supabase/supabase.plugin.zsh
 source $ZSH_PLUGINS/asdf/asdf.plugin.zsh
 source $ZSH_PLUGINS/blake-street/blake-street.plugin.zsh
+source $ZSH_PLUGINS/deno/deno.plugin.zsh
 
 # Prompt
 source $ZSH_PLUGINS/starship/starship.plugin.zsh

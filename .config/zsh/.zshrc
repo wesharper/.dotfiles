@@ -13,11 +13,6 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-# Set the homebrew shell environment if installed
-if [[ -f "/opt/homebrew/bin/brew" ]] then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-
 # Create workspace folder if not present
 if [ ! -d "$WORKSPACE" ]; then
    mkdir -pv "$(dirname $WORKSPACE)"
@@ -27,26 +22,20 @@ zstyle ':completion:*:git-checkout:*' sort false
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
 
-# Load completions from brew
-if type brew &>/dev/null
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-fi
-
 # Load completions
 autoload -Uz compinit && compinit
 
-# Git module plugins
+# Plugins
+## Git submodules
 source $ZSH_PLUGINS/fzf-tab/fzf-tab.plugin.zsh # must occur first in plugins list and after compinit
 source $ZSH_PLUGINS/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-
-# Hand-built or generated plugins
+## Custom/copied
 source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
 source $ZSH_PLUGINS/supabase/supabase.plugin.zsh
 source $ZSH_PLUGINS/asdf/asdf.plugin.zsh
 source $ZSH_PLUGINS/blake-street/blake-street.plugin.zsh
 source $ZSH_PLUGINS/deno/deno.plugin.zsh
-
-# Prompt
+source $ZSH_PLUGINS/brew/brew.plugin.zsh
+## Prompt
 source $ZSH_PLUGINS/starship/starship.plugin.zsh

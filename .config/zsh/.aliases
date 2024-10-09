@@ -1,3 +1,4 @@
 alias ls='ls --color'
 alias zshconfig="$EDITOR $ZDOTDIR/.zshrc"
 alias reload="source $ZDOTDIR/.zshrc"
+alias dotconf="$EDITOR $ZDOTDIR"

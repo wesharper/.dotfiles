@@ -48,6 +48,4 @@ source $ZSH_PLUGINS/asdf/asdf.plugin.zsh
 source $ZSH_PLUGINS/blake-street/blake-street.plugin.zsh
 
 # Prompt
-fpath+=($ZSH_PLUGINS/pure)
-autoload -U promptinit; promptinit
-prompt pure
+source $ZSH_PLUGINS/starship/starship.plugin.zsh

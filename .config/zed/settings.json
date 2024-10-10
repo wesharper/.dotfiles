@@ -1,5 +1,9 @@
 {
-  "theme": "Catppuccin Mocha",
+  "theme": {
+    "mode": "system",
+    "dark": "Catppuccin Mocha",
+    "light": "Catppuccin Latte"
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false

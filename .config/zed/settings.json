@@ -23,5 +23,6 @@
   "features": {
     "inline_completion_provider": "none",
     "copilot": false
-  }
+  },
+  "soft_wrap": "bounded"
 }

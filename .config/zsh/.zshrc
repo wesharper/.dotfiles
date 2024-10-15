@@ -42,5 +42,5 @@ source $ZSH_PLUGINS/brew/brew.plugin.zsh
 ## Prompt
 source $ZSH_PLUGINS/starship/starship.plugin.zsh
 
-## Theming
+## Theming for fast-syntax-highlighting
 fast-theme -q XDG:catppuccin-mocha

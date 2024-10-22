@@ -21,6 +21,7 @@
   },
   "buffer_font_family": "RobotoMono Nerd Font",
   "relative_line_numbers": true,
+  "vertical_scroll_margin": 8,
   "assistant": {
     "enabled": false,
     "version": "2"

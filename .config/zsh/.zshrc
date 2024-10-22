@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+# Add local user binaries to path
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:~/.local/bin
+
 # Configure aliases
 [ -f "${ZDOTDIR}/.aliases" ] && . "${ZDOTDIR}/.aliases"
 [ -f "${ZDOTDIR}/.aliases.local" ] && . "${ZDOTDIR}/.aliases.local"
@@ -23,7 +27,9 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
 
 # Load completions
-autoload -Uz compinit && compinit
+fpath=(~/.config/zsh/completions $fpath)
+autoload -Uz compinit
+compinit
 
 # Plugins
 ## Git submodules
@@ -32,12 +38,14 @@ source $ZSH_PLUGINS/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 
 ## Custom/copied
-source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
-source $ZSH_PLUGINS/supabase/supabase.plugin.zsh
 source $ZSH_PLUGINS/asdf/asdf.plugin.zsh
 source $ZSH_PLUGINS/blake-street/blake-street.plugin.zsh
-source $ZSH_PLUGINS/deno/deno.plugin.zsh
 source $ZSH_PLUGINS/brew/brew.plugin.zsh
+source $ZSH_PLUGINS/deno/deno.plugin.zsh
+source $ZSH_PLUGINS/fzf/fzf.plugin.zsh
+source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
+source $ZSH_PLUGINS/pyenv/pyenv.plugin.zsh
+source $ZSH_PLUGINS/supabase/supabase.plugin.zsh
 
 ## Prompt
 source $ZSH_PLUGINS/starship/starship.plugin.zsh

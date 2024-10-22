@@ -30,5 +30,6 @@
     "inline_completion_provider": "none",
     "copilot": false
   },
-  "soft_wrap": "bounded"
+  "soft_wrap": "bounded",
+  "preferred_line_length": 120
 }

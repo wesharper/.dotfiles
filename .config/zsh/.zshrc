@@ -44,7 +44,6 @@ source $ZSH_PLUGINS/deno/deno.plugin.zsh
 source $ZSH_PLUGINS/fzf/fzf.plugin.zsh
 source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
 source $ZSH_PLUGINS/pyenv/pyenv.plugin.zsh
-source $ZSH_PLUGINS/supabase/supabase.plugin.zsh
 
 ## Prompt
 source $ZSH_PLUGINS/starship/starship.plugin.zsh

@@ -10,6 +10,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export ZSH_PLUGINS="$ZDOTDIR/plugins"
+export ZSH_COMPLETIONS="$ZDOTDIR/completions"
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 
 # History

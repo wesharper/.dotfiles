@@ -22,14 +22,13 @@ if [ ! -d "$WORKSPACE" ]; then
    mkdir -pv "$(dirname $WORKSPACE)"
 fi
 
+# Load completions
+fpath+=$ZSH_COMPLETIONS
+autoload -Uz compinit && compinit
+
 zstyle ':completion:*:git-checkout:*' sort false
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
-
-# Load completions
-fpath=(~/.config/zsh/completions $fpath)
-autoload -Uz compinit
-compinit
 
 # Plugins
 ## Git submodules

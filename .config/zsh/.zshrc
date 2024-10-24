@@ -34,6 +34,7 @@ zstyle ':completion:*' menu no
 ## Git submodules
 source $ZSH_PLUGINS/fzf-tab/fzf-tab.plugin.zsh # must occur first in plugins list and after compinit
 source $ZSH_PLUGINS/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $ZSH_PLUGINS/zsh-autosuggestions-config/zsh-autosuggestions-config.plugin.zsh # must occur before zsh-autosuggestions is loaded
 source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 
 ## Custom/copied

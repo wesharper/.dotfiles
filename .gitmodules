@@ -1,6 +1,9 @@
-[submodule ".config/zsh/plugins/fast-syntax-highlighting"]
-	path = .config/zsh/plugins/fast-syntax-highlighting
-	url = https://github.com/zdharma-continuum/fast-syntax-highlighting.git
+[submodule ".config/zsh/plugins/zsh-syntax-highlighting"]
+	path = .config/zsh/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule ".config/zsh/plugins/zsh-syntax-highlighting-catppuccin"]
+	path = .config/zsh/plugins/zsh-syntax-highlighting-catppuccin
+	url = https://github.com/catppuccin/zsh-syntax-highlighting.git
 [submodule ".config/zsh/plugins/fzf-tab"]
 	path = .config/zsh/plugins/fzf-tab
 	url = https://github.com/Aloxaf/fzf-tab.git

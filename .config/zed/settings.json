@@ -23,8 +23,12 @@
   "relative_line_numbers": true,
   "vertical_scroll_margin": 8,
   "assistant": {
-    "enabled": false,
-    "version": "2"
+    "enabled": true,
+    "version": "2",
+    "default_model": {
+      "model": "claude-3-5-sonnet-latest",
+      "provider": "zed.dev"
+    }
   },
   "features": {
     "inline_completion_provider": "none",

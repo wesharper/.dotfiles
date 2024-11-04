@@ -1,6 +1,6 @@
 {
   "file_types": {
-    "Shell Script": [".aliases", ".aliases.local"]
+    "Shell Script": [".aliases", ".aliases.local", ".config/zsh/completions/*"]
   },
   "languages": {
     "Shell Script": {

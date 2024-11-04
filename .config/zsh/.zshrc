@@ -43,6 +43,7 @@ source $ZSH_PLUGINS/deno/deno.plugin.zsh
 source $ZSH_PLUGINS/fzf/fzf.plugin.zsh
 source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
 source $ZSH_PLUGINS/pyenv/pyenv.plugin.zsh
+source $ZSH_PLUGINS/uv/uv.plugin.zsh
 
 # Load completions
 fpath+=$ZSH_COMPLETIONS
@@ -50,3 +51,5 @@ autoload -Uz compinit && compinit
 
 ## Prompt
 source $ZSH_PLUGINS/starship/starship.plugin.zsh
+
+. "$HOME/.cargo/env"

@@ -39,10 +39,8 @@ source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source $ZSH_PLUGINS/asdf/asdf.plugin.zsh
 source $ZSH_PLUGINS/blake-street/blake-street.plugin.zsh
 source $ZSH_PLUGINS/brew/brew.plugin.zsh
-source $ZSH_PLUGINS/deno/deno.plugin.zsh
 source $ZSH_PLUGINS/fzf/fzf.plugin.zsh
 source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
-source $ZSH_PLUGINS/pyenv/pyenv.plugin.zsh
 source $ZSH_PLUGINS/uv/uv.plugin.zsh
 
 # Load completions
@@ -52,4 +50,3 @@ autoload -Uz compinit && compinit
 ## Prompt
 source $ZSH_PLUGINS/starship/starship.plugin.zsh
 
-. "$HOME/.cargo/env"

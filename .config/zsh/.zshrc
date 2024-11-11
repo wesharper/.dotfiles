@@ -38,10 +38,10 @@ source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 ## Custom/copied
 source $ZSH_PLUGINS/asdf/asdf.plugin.zsh
 source $ZSH_PLUGINS/blake-street/blake-street.plugin.zsh
+source $ZSH_PLUGINS/chuffed-darwin/chuffed-darwin.plugin.zsh
 source $ZSH_PLUGINS/brew/brew.plugin.zsh
 source $ZSH_PLUGINS/fzf/fzf.plugin.zsh
 source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
-source $ZSH_PLUGINS/uv/uv.plugin.zsh
 
 # Load completions
 fpath+=$ZSH_COMPLETIONS
@@ -49,4 +49,3 @@ autoload -Uz compinit && compinit
 
 ## Prompt
 source $ZSH_PLUGINS/starship/starship.plugin.zsh
-

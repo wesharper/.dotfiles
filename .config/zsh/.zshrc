@@ -40,7 +40,6 @@ source $ZSH_PLUGINS/asdf/asdf.plugin.zsh
 source $ZSH_PLUGINS/blake-street/blake-street.plugin.zsh
 source $ZSH_PLUGINS/chuffed-darwin/chuffed-darwin.plugin.zsh
 source $ZSH_PLUGINS/brew/brew.plugin.zsh
-source $ZSH_PLUGINS/fnm/fnm.plugin.zsh
 source $ZSH_PLUGINS/fzf/fzf.plugin.zsh
 source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
 

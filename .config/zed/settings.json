@@ -4,6 +4,9 @@
     "dark": "Catppuccin Mocha",
     "light": "Catppuccin Latte"
   },
+  "auto_install_extensions": {
+    "catppuccin": true
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false

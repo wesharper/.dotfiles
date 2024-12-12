@@ -23,22 +23,20 @@ sketchybar --default "${default[@]}"
 ##### Aerospace Workspace Configuration ####
 sketchybar --add event aerospace_workspace_change
 
-for monitor in $(aerospace list-monitors | awk '{print $1}'); do
-  sketchybar --add item space.$monitor left \
-    --subscribe space.$monitor aerospace_workspace_change \
-    --set space.$monitor \
-    background.color=0x35ffffff \
-    background.corner_radius=4 \
-    background.height=20 \
-    background.drawing=off \
-    icon.font.size=10 \
-    label.font.size=14 \
-    icon.padding_right=2 \
-    label.padding_left=2 \
-    icon=$monitor \
-    label=$(aerospace list-workspaces --monitor $monitor --visible) \
-    script="$CONFIG_DIR/plugins/aerospace.sh $monitor"
-done
+sketchybar --add item space left \
+  --subscribe space aerospace_workspace_change \
+  --set space \
+  background.color=0x35ffffff \
+  background.corner_radius=4 \
+  background.height=20 \
+  background.drawing=off \
+  icon.font.size=10 \
+  label.font.size=14 \
+  icon.padding_right=2 \
+  label.padding_left=2 \
+  icon=$(aerospace list-monitors --focused | awk '{print $1}') \
+  label=$FOCUSED_WORKSPACE \
+  script="$CONFIG_DIR/plugins/aerospace.sh"
 
 ##### Adding Left Items #####
 # We add some regular items to the left side of the bar, where

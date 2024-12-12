@@ -2,13 +2,11 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 
 ##### Bar Appearance #####
 
-sketchybar --bar position=top height=32 blur_radius=30 color=0x40000000
+sketchybar --bar position=top height=32 blur_radius=30 color=0x55000000 display=main
 
 ##### Defaults #####
 
 default=(
-  padding_left=5
-  padding_right=5
   icon.font="RobotoMono Nerd Font:Bold:14.0"
   label.font="RobotoMono Nerd Font:Bold:12.0"
   icon.color=0xffffffff
@@ -26,16 +24,12 @@ sketchybar --add event aerospace_workspace_change
 sketchybar --add item space left \
   --subscribe space aerospace_workspace_change \
   --set space \
-  background.color=0x35ffffff \
-  background.corner_radius=4 \
-  background.height=20 \
-  background.drawing=off \
   icon.font.size=10 \
   label.font.size=14 \
   icon.padding_right=2 \
   label.padding_left=2 \
   icon=$(aerospace list-monitors --focused | awk '{print $1}') \
-  label=$FOCUSED_WORKSPACE \
+  label=$(aerospace list-workspaces --focused) \
   script="$CONFIG_DIR/plugins/aerospace.sh"
 
 ##### Adding Left Items #####
@@ -60,7 +54,7 @@ sketchybar --add item chevron left \
 # https://felixkratz.github.io/SketchyBar/config/events
 
 sketchybar --add item clock right \
-           --set clock update_freq=10 icon=  script="$PLUGIN_DIR/clock.sh" \
+           --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" \
            --add item volume right \
            --set volume script="$PLUGIN_DIR/volume.sh" \
            --subscribe volume volume_change \
@@ -70,6 +64,6 @@ sketchybar --add item clock right \
 
 
 ##### Initialize #####
-sketchybar --hotload true
+sketchybar --hotload on
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update

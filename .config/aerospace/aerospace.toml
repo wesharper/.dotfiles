@@ -65,7 +65,8 @@ outer.left = 0
 outer.bottom = 0
 outer.top = [
     { monitor.'^built-in retina display$' = 0 },
-    { monitor.main = 32 },
+    # { monitor.main = 32 },
+    { monitor.main = 24 },
     0,
 ]
 outer.right = 0

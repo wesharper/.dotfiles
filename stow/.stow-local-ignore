@@ -1,0 +1,4 @@
+# Zed
+\.config/zed/prompts
+\.config/zed/embeddings
+\.config/zed/\.tmp.*

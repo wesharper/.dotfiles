@@ -2,13 +2,18 @@
 
 My personal `dotfiles` directory (MacOS/Linux) designed to be used with [GNU stow](https://www.gnu.org/software/stow/) to manage symlinks.
 
-Includes a modularized, manually configured, simple `zsh` config _without_ `oh-my-zsh` as well as configurations for a handful of applications in the `.config` folder.
+Includes a modularized, manually configured, simple `zsh` config _without_ `oh-my-zsh` as well as configurations for applications on both MacOS and Linux. Most application specific configuration is found in the `.config` folder. `zsh` scripts try to be aware of existing installations and current OS to provide some resilience across MacOS and Linux.
 
-If for some odd reason you want to try out my config or, more likely, if I move on to some new fun thing for long enough to forget what the hell I did here, just clone the repo (I put mine in `$HOME`) and run `stow .`.
+While I like NixOS for my Linux devices (like my PC gaming rig), I've opted to use `homebrew` and a declarative `Brewfile` to manage my installed applications across my MacOS machines. I played around with `nix-darwin` and `home-manager` but didn't like the extra layer of abstraction that `home-manager` seems to entail. I've found that basically all of my app or shell-specific configurations work cross-platform in their current state using stow out of the box and can use each platform's respective declarative config file (i.e. `configuration.nix` or `Brewfile`) for application management.
 
-**Use caution, as you may accidentally overwrite files you don't want to lose.**
+For me, it's a good balance of cross-platform reusability of my dotfiles without deviating too far from the broadly used patterns of the respective OS communities and without losing the benefits of declarative application management. For tools that are not cross-platform, like `Aerospace` or `i3wm`, the configuration files can live in the `~/.config` folder without causing any issues because they will never be read by uninstalled software. So far, I've found that platform-specific config is pretty rare, and typically only necessary in scripts for my `zsh` setup.
 
-## Troubleshooting
+If for some odd reason you want to try out my config or, more likely, if I haven't done this in a while, use the following steps:
 
-- `no such file or directory: $HOME/.config/zsh/plugins/*`
-  - I prefer to get plugins directly using git instead of `homebrew` or other package managers, so if this is your first use on a new machine or if a submodule has been added from a different machine, you will need to run `git submodule update --init --recursive` to grab code from relevant submodules. After that, it's good to periodically run `git submodule update --recursive --remote` just to keep everything up to date.
+- Install `stow`
+    - On Mac, I [install and use `homebrew`](https://brew.sh/) and install stow via `brew install stow` and in NixOS, I just include it in my `configuration.nix`
+- Clone the repo into the `$HOME` directory (this is important for absolute paths set in the `.zshenv` file)
+    - Since the repository includes submodules for zsh plugins, it's helpful to use the `--recurse-submodules` flag: `git clone --recurse-submodules <url> ~/.dotfiles`, although this can be done later if desired
+- `cd` into `~/.dotfiles`
+- Run `stow .`
+    - See the [`.stowrc` file](https://www.gnu.org/software/stow/manual/stow.html#Resource-Files) for the stow configuration

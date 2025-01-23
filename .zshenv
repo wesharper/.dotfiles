@@ -12,7 +12,7 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export ZSH_PLUGINS="$ZDOTDIR/plugins"
 export ZSH_COMPLETIONS="$ZDOTDIR/completions"
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
-export STOW_DIR="$HOME"
+export STOW_DIR="$HOME/.dotfiles"
 
 # History
 export HISTFILE="$ZDOTDIR/.zsh_history"

@@ -9,7 +9,10 @@
 \*.zwc
 
 # MacOS
-\.DS_store
+\.DS_Store
+\.CFUserTextEncoding
+\.Trash
+\.cache
 
 # CLI
 cli
@@ -22,6 +25,22 @@ cli
 \.config/zed/embeddings
 \.config/zed/prompts
 \.config/zed/\.tmp.*
+\.zed
 
 # Docs
-README.md
+README.*
+
+# Cloud Sync
+^OneDrive.*
+
+# Language Specific
+\.Rhistory
+\.bundle
+\.cargo
+
+# Dev/CLI Tools
+\.asdf
+\.aws
+\.babel\.json
+\.bun
+\.cdk

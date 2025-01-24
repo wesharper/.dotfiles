@@ -24,7 +24,7 @@ cask "zed"
 cask "discord"
 cask "messenger"
 cask "slack"
-cask "wechat"
+cask "whatsapp"
 
 # Gaming
 cask "steam"

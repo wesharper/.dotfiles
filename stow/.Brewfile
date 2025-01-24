@@ -9,6 +9,8 @@ brew "tmux"
 cask "font-roboto-mono-nerd-font"
 
 ##### APPLICATIONS #####
+cask_args require_sha: true
+
 # Dev Tools
 cask "beekeeper-studio"
 cask "docker"
@@ -28,7 +30,8 @@ cask "wechat"
 cask "steam"
 
 # Window Management
-cask "nikitabobko/tap/aerospace"
+tap "nikitabobko/tap"
+cask "aerospace"
 
 # Project Management
 cask "linear-linear"
@@ -42,4 +45,5 @@ cask "obsidian"
 # General Use
 cask "1password"
 cask "brave-browser"
+cask "nordvpn"
 cask "spotify"

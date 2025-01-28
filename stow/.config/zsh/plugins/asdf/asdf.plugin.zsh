@@ -1,1 +1,3 @@
-[ -s "/opt/homebrew/opt/asdf/libexec/asdf.sh" ] && \. /opt/homebrew/opt/asdf/libexec/asdf.sh
+if type brew > /dev/null; then
+  echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+fi

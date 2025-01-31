@@ -45,5 +45,6 @@ cask "obsidian"
 # General Use
 cask "1password"
 cask "brave-browser"
+cask "chatgpt"
 cask "nordvpn"
 cask "spotify"

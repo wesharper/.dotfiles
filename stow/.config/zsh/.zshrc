@@ -50,9 +50,3 @@ compinit
 
 ## Prompt
 source $ZSH_PLUGINS/starship/starship.plugin.zsh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh

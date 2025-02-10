@@ -1,3 +1,6 @@
+##### BREW #####
+tap "homebrew/services"
+
 ##### CLI TOOLS #####
 brew "fzf"
 cask "git-credential-manager"

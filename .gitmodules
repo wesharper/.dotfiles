@@ -1,21 +1,21 @@
-[submodule ".config/zsh/plugins/zsh-syntax-highlighting"]
-	path = .config/zsh/plugins/zsh-syntax-highlighting
+[submodule "zsh-syntax-highlighting"]
+	path = stow/.config/zsh/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule ".config/zsh/plugins/zsh-syntax-highlighting-catppuccin"]
-	path = .config/zsh/plugins/zsh-syntax-highlighting-catppuccin
+[submodule "zsh-syntax-highlighting-catppuccin"]
+	path = stow/.config/zsh/plugins/zsh-syntax-highlighting-catppuccin
 	url = https://github.com/catppuccin/zsh-syntax-highlighting.git
-[submodule ".config/zsh/plugins/fzf-tab"]
-	path = .config/zsh/plugins/fzf-tab
+[submodule "fzf-tab"]
+	path = stow/.config/zsh/plugins/fzf-tab
 	url = https://github.com/Aloxaf/fzf-tab.git
-[submodule ".config/zsh/plugins/zsh-autosuggestions"]
-	path = .config/zsh/plugins/zsh-autosuggestions
+[submodule "zsh-autosuggestions"]
+	path = stow/.config/zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
-[submodule ".config/zsh/plugins/zsh-autocomplete"]
-	path = .config/zsh/plugins/zsh-autocomplete
+[submodule "zsh-autocomplete"]
+	path = stow/.config/zsh/plugins/zsh-autocomplete
 	url = https://github.com/marlonrichert/zsh-autocomplete.git
-[submodule ".config/nvm"]
-	path = .config/nvm
+[submodule "nvm"]
+	path = stow/.config/nvm
 	url = https://github.com/nvm-sh/nvm.git
-[submodule ".config/tmux/plugins/catppuccin/tmux"]
-	path = .config/tmux/plugins/catppuccin/tmux
-	url = https://github.com/catppuccin/tmux.git
+[submodule "tpm"]
+	path = stow/.config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm

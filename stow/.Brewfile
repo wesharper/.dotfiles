@@ -4,9 +4,15 @@ tap "homebrew/services"
 ##### CLI TOOLS #####
 brew "fzf"
 cask "git-credential-manager"
+brew "nvm"
 brew "nvim"
 brew "stow"
 brew "tmux"
+brew "tpm" # tmux plugin manager
+brew "zsh-autocomplete"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "zsh-syntax-highlighting-catppuccin"
 
 ##### FONTS #####
 cask "font-roboto-mono-nerd-font"

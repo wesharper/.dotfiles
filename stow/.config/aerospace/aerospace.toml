@@ -102,6 +102,10 @@ outer.right = 0
 # end tell'
 # '''
 
+# See: https://nikitabobko.github.io/AeroSpace/goodies#disable-hide-app
+cmd-h = []     # Disable "hide application"
+cmd-alt-h = [] # Disable "hide others"
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-slash = 'layout tiles horizontal vertical'
 alt-comma = 'layout accordion horizontal vertical'

@@ -1,5 +1,5 @@
 export TERM="xterm-256color"
-export EDITOR="zed"
+export EDITOR="code"
 
 # Config directories
 export DOTFILES="$HOME/.dotfiles"

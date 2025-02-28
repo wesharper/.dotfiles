@@ -35,10 +35,11 @@ cask "slack"
 cask "whatsapp"
 
 # Gaming
+cask "1kc-razer"
 cask "steam"
 
 # Window Management
-tap "nikitabobko/tap"
+tap "nikitabobko/tap" # adds aerospace repo as a tappable source
 cask "aerospace"
 
 # Project Management

@@ -1,10 +1,16 @@
-##### BREW #####
+##### GLOBAL SETTING
+ENV["HOMEBREW_BUNDLE_INSTALL_CLEANUP"] = "true"
+cask_args appdir: "~/Applications", require_sha: true
+
+##### TAP SOURCES #####
 tap "homebrew/services"
+tap "nikitabobko/tap" # aerospace
 
 ##### CLI TOOLS #####
 brew "asdf"
 brew "fzf"
 cask "git-credential-manager"
+brew "mas"
 brew "nvm"
 brew "nvim"
 brew "stow"
@@ -17,9 +23,6 @@ brew "zsh-syntax-highlighting"
 ##### FONTS #####
 cask "font-roboto-mono-nerd-font"
 
-##### APPLICATIONS #####
-cask_args require_sha: true
-
 # Dev Tools
 cask "beekeeper-studio"
 cask "docker"
@@ -27,20 +30,16 @@ cask "gitbutler"
 cask "ghostty"
 cask "visual-studio-code"
 cask "qflipper"
-cask "zed"
 
 # Communications
 cask "discord"
-cask "messenger"
 cask "slack"
 cask "whatsapp"
 
 # Gaming
 cask "1kc-razer"
-cask "steam"
 
 # Window Management
-tap "nikitabobko/tap" # adds aerospace repo as a tappable source
 cask "aerospace"
 
 # Project Management
@@ -52,9 +51,17 @@ cask "figma"
 # Notes
 cask "obsidian"
 
-# General Use
+# Finance
+mas "Copilot: Track & Budget Money", id: 144_733_0651
+
+# Security
 cask "1password"
+mas "1Password for Safari", id: 156_981_3296
+
+# Web/Search
 cask "brave-browser"
 cask "chatgpt"
 cask "nordvpn"
-cask "spotify"
+
+# Music
+cask "spotify", args: {require_sha: false}

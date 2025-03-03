@@ -1,5 +1,4 @@
 ##### GLOBAL SETTING
-ENV["HOMEBREW_BUNDLE_INSTALL_CLEANUP"] = "true"
 cask_args appdir: "~/Applications", require_sha: true
 
 ##### TAP SOURCES #####
@@ -30,6 +29,7 @@ cask "gitbutler"
 cask "ghostty"
 cask "visual-studio-code"
 cask "qflipper"
+mas "Xcode", id: 497799835
 
 # Communications
 cask "discord"
@@ -52,11 +52,11 @@ cask "figma"
 cask "obsidian"
 
 # Finance
-mas "Copilot: Track & Budget Money", id: 144_733_0651
+mas "Copilot: Track & Budget Money", id: 1447330651
 
 # Security
 cask "1password"
-mas "1Password for Safari", id: 156_981_3296
+mas "1Password for Safari", id: 1569813296
 
 # Web/Search
 cask "brave-browser"

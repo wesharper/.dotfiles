@@ -26,11 +26,6 @@ zstyle ':completion:*:git-checkout:*' sort false
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
 
-# Load completions
-fpath+=$ZSH_COMPLETIONS
-autoload -Uz compinit
-compinit
-
 # Plugins
 source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source $ZSH_PLUGINS/asdf/asdf.plugin.zsh
@@ -41,3 +36,8 @@ source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
 source $ZSH_PLUGINS/zsh-sh-catppuccin/zsh-sh-catppuccin.plugin.zsh
 source $ZSH_PLUGINS/zsh-syntax-hl/zsh-syntax-hl.plugin.zsh # has to happen after catppuccin theme plugin
 source $ZSH_PLUGINS/starship/starship.plugin.zsh
+
+# Load completions
+fpath+=$ZSH_COMPLETIONS
+autoload -Uz compinit
+compinit

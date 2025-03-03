@@ -2,6 +2,7 @@
 tap "homebrew/services"
 
 ##### CLI TOOLS #####
+brew "asdf"
 brew "fzf"
 cask "git-credential-manager"
 brew "nvm"

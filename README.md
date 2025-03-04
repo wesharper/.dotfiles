@@ -10,12 +10,13 @@ For me, it's a good balance of cross-platform reusability of my dotfiles without
 
 If for some odd reason you want to try out my config or, more likely, if I haven't done this in a while, use the following steps:
 
-- Install `stow`
-    - On Mac, I [install and use `homebrew`](https://brew.sh/) and install stow via `brew install stow` and in NixOS, I just include it in my `configuration.nix`
-    - Note: for Mac `xcode-select --install` may be necessary
-- Clone the repo into the `$HOME` directory (this is important for absolute paths set in the `.zshenv` file)
-    - Since the repository includes submodules for zsh plugins, it's helpful to use the `--recurse-submodules` flag: `git clone --recurse-submodules <url> ~/.dotfiles`, although this can be done later if desired
-- `cd` into `~/.dotfiles`
-- Run `stow .`
-    - See the [`.stowrc` file](https://www.gnu.org/software/stow/manual/stow.html#Resource-Files) for the stow configuration
-- MacOS: run `brew bundle --global`
+- Mac (first time only)
+
+  - run `xcode-select --install`
+  - clone the repo somewhere using the `--recurse-submodules` option for zsh plugins (the `.stowrc` should allow this repo to live anywhere)
+  - run `sh setup-darwin.sh` from the repo root
+
+- NixOS
+
+  - Ensure `stow` is in the system's application list
+  - Run `stow .` from the repo root

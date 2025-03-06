@@ -1,18 +1,3 @@
-if [[ $(uname) = "Darwin" ]]
-then
-  echo "Installing homebrew"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-  echo "Installing stow"
-  brew install stow
-
-  echo "Stowing dotfiles"
-  cd $(dirname $0) && stow .
-
-  echo "Installing software via global Brewfile"
-  brew bundle --global
-
-  echo "Configuring system settings"
   # A helpful list of defaults can be found [here](https://macos-defaults.com)
 
   # enable 3-finger drag
@@ -45,6 +30,3 @@ then
   defaults write com.apple.finder "ShowPathbar" -bool true
   defaults write com.apple.finder "FXPreferredViewStyle" -string "clmv" # set default view to column view
   killall Finder
-fi
-
-echo "All done!"

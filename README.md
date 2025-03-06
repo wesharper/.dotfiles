@@ -14,7 +14,7 @@ If for some odd reason you want to try out my config or, more likely, if I haven
 
   - run `xcode-select --install`
   - clone the repo somewhere using the `--recurse-submodules` option for zsh plugins (the `.stowrc` should allow this repo to live anywhere)
-  - run `sh setup-darwin.sh` from the repo root
+  - run `sh darwin-init.sh` from the repo root
 
 - NixOS
 

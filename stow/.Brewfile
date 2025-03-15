@@ -7,11 +7,14 @@ tap "nikitabobko/tap" # aerospace
 
 ##### CLI TOOLS #####
 brew "asdf"
+brew "fd"
 brew "fzf"
 cask "git-credential-manager"
+brew "lazygit"
 brew "mas"
 brew "nvm"
 brew "nvim"
+brew "ripgrep"
 brew "stow"
 brew "tmux"
 brew "tpm" # tmux plugin manager
@@ -24,6 +27,7 @@ cask "font-roboto-mono-nerd-font"
 
 # Dev Tools
 cask "beekeeper-studio"
+cask "dbeaver-community"
 cask "docker"
 cask "gitbutler"
 cask "ghostty"

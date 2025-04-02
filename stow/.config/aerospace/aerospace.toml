@@ -137,8 +137,3 @@ u = 1
 i = 1
 o = 1
 p = 1
-
-# tile all windows by default
-[[on-window-detected]]
-check-further-callbacks = true
-run = 'layout tiling'

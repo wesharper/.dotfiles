@@ -1,5 +1,5 @@
 export TERM="xterm-256color"
-export EDITOR="code"
+export EDITOR="nvim"
 
 # Config directories
 export DOTFILES="$HOME/.dotfiles"

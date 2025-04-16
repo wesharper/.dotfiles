@@ -1,11 +1,7 @@
-[credential]
-    credentialStore = "cache"
-	helper =
-	helper = /usr/local/share/gcm-core/git-credential-manager
 [user]
 	name = Weston Harper
 	email = 13283469+wesharper@users.noreply.github.com
 [push]
     autoSetupRemote = true
-[credential "https://dev.azure.com"]
-	useHttpPath = true
+[credential]
+	helper = manager

@@ -2,7 +2,7 @@ gui:
   # Use the mocha catppuccin theme
   theme:
     activeBorderColor:
-      - "#b4befe"
+      - "#f5c2e7"
       - bold
     inactiveBorderColor:
       - "#a6adc8"
@@ -13,7 +13,7 @@ gui:
     cherryPickedCommitBgColor:
       - "#45475a"
     cherryPickedCommitFgColor:
-      - "#b4befe"
+      - "#f5c2e7"
     unstagedChangesColor:
       - "#f38ba8"
     defaultFgColor:

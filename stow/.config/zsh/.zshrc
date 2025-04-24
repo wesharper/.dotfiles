@@ -28,7 +28,6 @@ zstyle ':completion:*' menu no
 
 # Plugins
 source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source $ZSH_PLUGINS/asdf/asdf.plugin.zsh
 source $ZSH_PLUGINS/blake-street/blake-street.plugin.zsh
 source $ZSH_PLUGINS/fzf/fzf.plugin.zsh
 source $ZSH_PLUGINS/nvm/nvm.plugin.zsh

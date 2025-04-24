@@ -4,4 +4,8 @@ if [[ `uname` == "Darwin" ]]; then
   if [[ -e /opt/homebrew/bin/brew ]]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
+
+  if [[ -e /opt/homebrew/bin/rbenv ]]; then
+    eval "$(rbenv init - --no-rehash zsh)"
+  fi
 fi

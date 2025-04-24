@@ -6,7 +6,6 @@ tap "homebrew/services"
 tap "nikitabobko/tap" # aerospace
 
 ##### CLI TOOLS #####
-brew "asdf"
 brew "fd"
 brew "fzf"
 cask "git-credential-manager"
@@ -14,7 +13,10 @@ brew "lazygit"
 brew "mas"
 brew "nvm"
 brew "nvim"
+brew "rbenv"
 brew "ripgrep"
+brew "ruby-build"
+brew "rust"
 brew "stow"
 brew "tmux"
 brew "tpm" # tmux plugin manager

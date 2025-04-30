@@ -9,10 +9,13 @@ vim.opt.listchars = {
   space = "·",
   trail = "·",
   lead = "·",
-  eol = "↴",
+  eol = "↵",
   nbsp = "␣",
   extends = "»",
   precedes = "«",
 }
 
 vim.opt.wrap = true
+
+vim.opt.exrc = true
+vim.opt.secure = true

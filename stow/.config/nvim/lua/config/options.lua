@@ -3,6 +3,16 @@
 -- Add any additional options here
 vim.g.snacks_animate = false
 
-vim.opt.list = true -- show whitespace characters
+vim.opt.list = true
+vim.opt.listchars = {
+  tab = "»·",
+  space = "·",
+  trail = "·",
+  lead = "·",
+  eol = "↴",
+  nbsp = "␣",
+  extends = "»",
+  precedes = "«",
+}
 
 vim.opt.wrap = true

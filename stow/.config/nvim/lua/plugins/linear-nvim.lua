@@ -8,10 +8,6 @@ return {
     },
     keys = {
       {
-        "<leader>m",
-        desc = "linear",
-      },
-      {
         "<leader>mm",
         function()
           require("linear-nvim").show_assigned_issues()

@@ -1,5 +1,4 @@
-if [[ $(uname) = "Darwin" ]]
-then
+if [[ $(uname) = "Darwin" ]]; then
   echo "Installing homebrew"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 

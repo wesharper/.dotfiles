@@ -4,6 +4,7 @@ cask_args appdir: "~/Applications", require_sha: true
 ##### TAP SOURCES #####
 tap "homebrew/services"
 tap "nikitabobko/tap" # aerospace
+tap "mlb-rs/mlbt"
 
 ##### CLI TOOLS #####
 brew "fd"
@@ -11,6 +12,7 @@ brew "fzf"
 cask "git-credential-manager"
 brew "lazygit"
 brew "mas"
+brew "mlbt"
 brew "nvm"
 brew "nvim"
 brew "rbenv"

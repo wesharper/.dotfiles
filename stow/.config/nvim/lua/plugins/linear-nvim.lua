@@ -30,5 +30,11 @@ return {
         desc = "Linear: Show Issue Details",
       },
     },
+    config = function()
+      require("linear-nvim").setup({
+        issue_regex = "BS%-%d+",
+        issue_fields = { "title", "description", "branch_name" },
+      })
+    end,
   },
 }

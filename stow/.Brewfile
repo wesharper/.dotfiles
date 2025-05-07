@@ -73,5 +73,5 @@ cask "chatgpt"
 cask "nordvpn"
 
 # Music
-brew "ncspot"
+brew "spotify_player"
 cask "spotify", args: {require_sha: false}

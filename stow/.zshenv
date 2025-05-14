@@ -13,6 +13,9 @@ export ZSH_PLUGINS="$ZDOTDIR/plugins"
 export ZSH_COMPLETIONS="$ZDOTDIR/completions"
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 
+# Gnome
+export DCONF_PROFILE=user
+
 # History
 export HISTFILE="$ZDOTDIR/.zsh_history"
 export HISTSIZE=5000

@@ -1,0 +1,15 @@
+[[keymaps]]
+command = "None"
+key_sequence = "q"
+[[keymaps]]
+command = "None"
+key_sequence = "C-s"
+[[keymaps]]
+command = "Shuffle"
+key_sequence = "S"
+[[keymaps]]
+command = "FocusNextWindow"
+key_sequence = "l"
+[[keymaps]]
+command = "FocusPreviousWindow"
+key_sequence = "h"

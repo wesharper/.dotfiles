@@ -2,4 +2,4 @@ alias ls='ls --color'
 alias zshconfig="$EDITOR $ZDOTDIR/.zshrc"
 alias reload="source ~/.zshenv && source $ZDOTDIR/.zshrc"
 alias tmux-reload="tmux source $XDG_CONFIG_HOME/tmux/tmux.conf"
-alias jams="spotify_player"
+alias jams="TERM='xterm-ghostty' spotify_player"

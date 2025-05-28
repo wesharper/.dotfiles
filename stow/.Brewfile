@@ -4,7 +4,6 @@ cask_args appdir: "~/Applications", require_sha: true
 ##### TAP SOURCES #####
 tap "homebrew/services"
 tap "nikitabobko/tap" # aerospace
-tap "mlb-rs/mlbt"
 
 ##### CLI TOOLS #####
 brew "fd"
@@ -13,7 +12,6 @@ cask "git-credential-manager"
 brew "goenv"
 brew "lazygit"
 brew "mas"
-brew "mlbt"
 brew "nvm"
 brew "nvim"
 brew "rbenv"
@@ -36,6 +34,8 @@ cask "dbeaver-community"
 cask "docker"
 cask "gitbutler"
 cask "ghostty"
+brew "lazysql"
+brew "lazydocker"
 cask "visual-studio-code"
 cask "qflipper"
 mas "Xcode", id: 497799835

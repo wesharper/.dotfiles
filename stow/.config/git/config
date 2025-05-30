@@ -7,3 +7,4 @@
   autoSetupRemote = true
 [credential]
 	helper = manager
+  credentialStore = cache

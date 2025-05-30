@@ -1,5 +1,3 @@
-if [[ $(uname) = "Darwin" ]]
-then
   export NVM_DIR="$(brew --prefix nvm)"
 
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -29,4 +27,3 @@ then
 
   add-zsh-hook chpwd load-nvmrc
   load-nvmrc
-fi

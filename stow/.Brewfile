@@ -2,7 +2,6 @@
 cask_args appdir: "~/Applications", require_sha: true
 
 ##### TAP SOURCES #####
-tap "homebrew/services"
 tap "nikitabobko/tap" # aerospace
 
 ##### CLI TOOLS #####
@@ -14,6 +13,7 @@ brew "lazygit"
 brew "mas"
 brew "nvm"
 brew "nvim"
+brew "pass" # used for gpg-based password management (git-credential-manager)
 brew "rbenv"
 brew "ripgrep"
 brew "ruby-build"

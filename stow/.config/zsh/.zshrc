@@ -31,6 +31,7 @@ source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source $ZSH_PLUGINS/blake-street/blake-street.plugin.zsh
 source $ZSH_PLUGINS/dotnet/dotnet.plugin.zsh
 source $ZSH_PLUGINS/fzf/fzf.plugin.zsh
+source $ZSH_PLUGINS/git-credential-manager/git-credential-manager.plugin.zsh
 source $ZSH_PLUGINS/goenv/goenv.plugin.zsh
 source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
 source $ZSH_PLUGINS/zsh-sh-catppuccin/zsh-sh-catppuccin.plugin.zsh

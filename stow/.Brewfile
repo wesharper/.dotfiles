@@ -6,7 +6,6 @@ tap "homebrew/services"
 tap "nikitabobko/tap" # aerospace
 
 ##### CLI TOOLS #####
-brew "dotnet" # used for installing git-credential-manager on Linux
 brew "fd"
 brew "fzf"
 cask "git-credential-manager"

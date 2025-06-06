@@ -19,3 +19,5 @@ vim.opt.wrap = true
 
 vim.opt.exrc = true
 vim.opt.secure = true
+
+vim.g.lazyvim_ruby_formatter = "ruby_lsp"

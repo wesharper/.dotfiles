@@ -3,6 +3,7 @@ cask_args appdir: "~/Applications", require_sha: true
 
 ##### TAP SOURCES #####
 tap "nikitabobko/tap" # aerospace
+tap "FelixKratz/formulae" # janky-borders
 
 ##### CLI TOOLS #####
 brew "fd"
@@ -31,11 +32,12 @@ cask "font-roboto-mono-nerd-font"
 # Dev Tools
 cask "beekeeper-studio"
 cask "dbeaver-community"
-cask "docker"
+brew "docker"
 cask "gitbutler"
 cask "ghostty"
 brew "lazysql"
 brew "lazydocker"
+cask "orbstack"
 cask "visual-studio-code"
 cask "qflipper"
 mas "Xcode", id: 497799835
@@ -45,11 +47,9 @@ cask "discord"
 cask "slack"
 cask "whatsapp"
 
-# Gaming
-cask "1kc-razer"
-
 # Window Management
 cask "aerospace"
+brew "borders"
 
 # Project Management
 cask "linear-linear"
@@ -70,9 +70,10 @@ mas "1Password for Safari", id: 1569813296
 
 # Web/Search
 cask "brave-browser"
-cask "chatgpt"
 cask "nordvpn"
+cask "wifiman"
 
-# Music
+# Media
+cask "jellyfin-media-player"
 brew "spotify_player"
 cask "spotify", args: {require_sha: false}

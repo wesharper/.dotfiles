@@ -42,3 +42,6 @@ source $ZSH_PLUGINS/starship/starship.plugin.zsh
 fpath+=$ZSH_COMPLETIONS
 autoload -Uz compinit
 compinit
+
+# Start JankyBorders
+brew services start borders

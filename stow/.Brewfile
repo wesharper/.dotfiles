@@ -32,6 +32,7 @@ cask "font-roboto-mono-nerd-font"
 # Dev Tools
 cask "beekeeper-studio"
 cask "dbeaver-community"
+brew "colima"
 brew "docker"
 cask "gitbutler"
 cask "ghostty"

@@ -43,5 +43,3 @@ fpath+=$ZSH_COMPLETIONS
 autoload -Uz compinit
 compinit
 
-# Start JankyBorders
-brew services start borders

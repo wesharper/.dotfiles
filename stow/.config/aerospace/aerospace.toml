@@ -2,9 +2,7 @@
 after-login-command = []
 
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = [
-  'borders', # start janky borders
-]
+after-startup-command = []
 
 # Start AeroSpace at login
 start-at-login = true

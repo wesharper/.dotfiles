@@ -48,6 +48,9 @@ cask "discord"
 cask "slack"
 cask "whatsapp"
 
+# Productivity
+cask "libreoffice"
+
 # Window Management
 cask "aerospace"
 brew "borders"

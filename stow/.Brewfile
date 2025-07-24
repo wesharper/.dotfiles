@@ -81,3 +81,4 @@ cask "wifiman"
 cask "jellyfin-media-player"
 brew "spotify_player"
 cask "spotify", args: {require_sha: false}
+cask "webtorrent"

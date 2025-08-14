@@ -21,7 +21,6 @@ brew "ruby-build"
 brew "rust"
 brew "stow"
 brew "tmux"
-brew "tpm" # tmux plugin manager
 brew "zsh-autocomplete"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
@@ -38,7 +37,6 @@ cask "gitbutler"
 cask "ghostty"
 brew "lazysql"
 brew "lazydocker"
-cask "orbstack"
 cask "visual-studio-code"
 cask "qflipper"
 mas "Xcode", id: 497799835
@@ -78,7 +76,6 @@ cask "nordvpn"
 cask "wifiman"
 
 # Media
-cask "jellyfin-media-player"
 brew "spotify_player"
 cask "spotify", args: {require_sha: false}
 cask "webtorrent"

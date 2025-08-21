@@ -4,12 +4,12 @@ format = """
 [](surface0)\
 $os\
 $username\
-[](bg:peach fg:surface0)\
+[](bg:teal fg:surface0)\
 $directory\
-[](fg:peach bg:green)\
+[](fg:teal bg:pink)\
 $git_branch\
 $git_status\
-[ ](fg:purple)\
+[ ](fg:pink)\
 $line_break$character"""
 
 palette = 'catppuccin_mocha'
@@ -75,11 +75,11 @@ format = '[ $user ]($style)'
 
 [aws]
 format = '[$symbol($profile )(\($region\) )]($style)'
-style = 'fg:base bg:purple'
+style = 'fg:crust bg:purple'
 symbol = '🅰 '
 
 [directory]
-style = "fg:mantle bg:peach"
+style = "fg:crust bg:teal"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -94,73 +94,15 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:teal"
-format = '[[ $symbol $branch ](fg:base bg:green)]($style)'
+style = "fg:crust bg:pink"
+format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:teal"
-format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
-
-[nodejs]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[c]
-symbol = " "
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[rust]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[golang]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[php]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[java]
-symbol = " "
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[kotlin]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[haskell]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[python]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[ruby]
-symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
-
-[docker_context]
-symbol = ""
-style = "fg:base bg:blue"
-format = '[ $symbol( $context) ]($style)'
+style = "fg:crust bg:pink"
+format = '[($all_status$ahead_behind )]($style)'
 
 [time]
 disabled = true
-time_format = "%R"
-style = "bg:peach"
-format = '[[  $time ](fg:mantle bg:purple)]($style)'
 
 [line_break]
 disabled = false

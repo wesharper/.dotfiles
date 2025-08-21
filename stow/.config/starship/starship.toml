@@ -9,16 +9,6 @@ $directory\
 [](fg:peach bg:green)\
 $git_branch\
 $git_status\
-[](fg:green bg:teal)\
-$rust\
-$golang\
-$nodejs\
-$python\
-$ruby\
-[](fg:teal bg:blue)\
-$docker_context\
-[](fg:blue bg:purple)\
-$aws\
 [ ](fg:purple)\
 $line_break$character"""
 

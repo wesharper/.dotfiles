@@ -6,6 +6,7 @@ tap "nikitabobko/tap" # aerospace
 tap "FelixKratz/formulae" # janky-borders
 
 ##### CLI TOOLS #####
+brew "eza"
 brew "fd"
 brew "fzf"
 cask "git-credential-manager"

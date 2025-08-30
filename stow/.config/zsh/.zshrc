@@ -4,6 +4,11 @@
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:~/.local/bin
 
+# Configure brew path for arch
+if [[ $(uname) = "Linux" ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
 # Configure aliases
 [ -f "${ZDOTDIR}/.aliases" ] && . "${ZDOTDIR}/.aliases"
 [ -f "${ZDOTDIR}/.aliases.local" ] && . "${ZDOTDIR}/.aliases.local"

@@ -4,9 +4,6 @@ set -eoux pipefail
 echo "Installing zsh"
 sudo pacman -Syu zsh
 
-echo "Changing default shell"
-chsh -s /usr/bin/zsh
-
 echo "Installing homebrew dependencies"
 sudo pacman -Syu base-devel procps-ng curl file git
 

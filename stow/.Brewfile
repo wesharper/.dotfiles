@@ -12,7 +12,6 @@ cask "git-credential-manager"
 brew "goenv"
 brew "lazygit"
 brew "mas"
-brew "nvm"
 brew "nvim"
 brew "pass" # used for gpg-based password management (git-credential-manager)
 brew "rbenv"

@@ -1,0 +1,22 @@
+general.import = ["~/.config/omarchy/current/theme/alacritty.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+normal = { family = "RobotoMono Nerd Font", style = "Regular" }
+bold = { family = "RobotoMono Nerd Font", style = "Bold" }
+italic = { family = "RobotoMono Nerd Font", style = "Italic" }
+size = 9
+
+[window]
+padding.x = 14
+padding.y = 14
+decorations = "None"
+opacity = 0.98
+
+[keyboard]
+bindings = [{ key = "F11", action = "ToggleFullscreen" }]
+
+[terminal]
+shell = { program = "/bin/zsh", args = ["--login", "--interactive"] }

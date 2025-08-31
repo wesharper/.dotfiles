@@ -2,17 +2,10 @@
 @define-color mantle hsl(240deg, 21%, 12%);
 @define-color crust hsl(240deg, 23%, 9%);
 
-#window {
-  border-radius: 10px;
-}
-
 #box {
-  border-radius: 10px;
   background: @mantle;
-  border: 1px solid @foreground;
 }
 
 #search {
   background: @crust;
-  border-radius: 5px;
 }

@@ -1,0 +1,12 @@
+#window {
+  border-radius: 10px;
+}
+
+#box {
+  border-radius: 10px;
+  border: 1px solid @foreground;
+}
+
+#search {
+  border-radius: 5px;
+}

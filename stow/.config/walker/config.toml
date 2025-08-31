@@ -1,6 +1,6 @@
 close_when_open = true
-theme = "gruntled"
-theme_base = ["omarchy-default"]
+theme = "gruntled-catppuccin-mocha"
+theme_base = ["omarchy-default", "gruntled-base"]
 theme_location = [
   "~/.local/share/omarchy/default/walker/themes/",
   "~/.config/walker/themes/",

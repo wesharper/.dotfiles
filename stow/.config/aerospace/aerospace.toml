@@ -26,8 +26,8 @@ default-root-container-orientation = 'auto'
 key-mapping.preset = 'qwerty'
 
 [gaps]
-inner.horizontal = 6
-inner.vertical = 6
+inner.horizontal = 7
+inner.vertical = 7
 outer.left = 6
 outer.bottom = 6
 outer.top = 6

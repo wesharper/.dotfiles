@@ -1,6 +1,6 @@
 theme = dark:catppuccin-mocha,light:catppuccin-latte
 font-family = "RobotoMono Nerd Font"
-font-size = 10 
+font-size = 13 
 
 keybind = global:super+grave_accent=toggle_quick_terminal
 keybind = super+enter=ignore

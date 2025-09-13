@@ -10,15 +10,12 @@ brew "eza"
 brew "fd"
 brew "fzf"
 cask "git-credential-manager"
-brew "goenv"
 brew "lazygit"
 brew "mas"
+brew "mise"
 brew "nvim"
 brew "pass" # used for gpg-based password management (git-credential-manager)
-brew "rbenv"
 brew "ripgrep"
-brew "ruby-build"
-brew "rust"
 brew "stow"
 brew "tmux"
 brew "zsh-autocomplete"
@@ -37,7 +34,6 @@ cask "gitbutler"
 cask "ghostty"
 brew "lazysql"
 brew "lazydocker"
-cask "visual-studio-code"
 cask "qflipper"
 mas "Xcode", id: 497799835
 
@@ -76,6 +72,5 @@ cask "nordvpn"
 cask "wifiman"
 
 # Media
-brew "spotify_player"
 cask "spotify", args: {require_sha: false}
 cask "webtorrent"

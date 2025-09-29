@@ -40,6 +40,7 @@ mas "Xcode", id: 497799835
 
 # Communications
 cask "discord"
+cask "signal"
 cask "slack"
 cask "whatsapp"
 

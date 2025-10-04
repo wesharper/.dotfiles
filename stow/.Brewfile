@@ -74,5 +74,5 @@ cask "nordvpn"
 cask "wifiman"
 
 # Media
+cask "localsend"
 cask "spotify", args: {require_sha: false}
-cask "webtorrent"

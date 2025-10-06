@@ -4,4 +4,7 @@ font-family = "RobotoMono Nerd Font"
 keybind = global:super+grave_accent=toggle_quick_terminal
 keybind = super+enter=ignore
 
+# prevents "Close Window?" dialog
+confirm-close-surface = false
+
 command = /bin/zsh --login --interactive

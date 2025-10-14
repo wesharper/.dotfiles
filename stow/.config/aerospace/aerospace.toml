@@ -79,6 +79,7 @@ alt-u = 'workspace u'
 alt-i = 'workspace i'
 alt-o = 'workspace o'
 alt-p = 'workspace p'
+alt-0 = 'workspace 0'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
@@ -94,6 +95,7 @@ alt-shift-u = ['move-node-to-workspace u', 'workspace u']
 alt-shift-i = ['move-node-to-workspace i', 'workspace i']
 alt-shift-o = ['move-node-to-workspace o', 'workspace o']
 alt-shift-p = ['move-node-to-workspace p', 'workspace p']
+alt-shift-0 = ['move-node-to-workspace 0', 'workspace 0']
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -125,11 +127,12 @@ alt-shift-l = ['join-with right', 'mode main']
 3 = 'main'
 4 = 'main'
 5 = 'main'
-6 = 3
-7 = 3
-8 = 3
-9 = 3
+6 = 'main'
+7 = 'main'
+8 = 'main'
+9 = 'main'
 u = 1
 i = 1
 o = 1
 p = 1
+0 = 3

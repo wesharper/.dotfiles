@@ -33,11 +33,10 @@ zstyle ':completion:*' menu no
 
 # Plugins
 source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source $ZSH_PLUGINS/dotnet/dotnet.plugin.zsh
+source $ZSH_PLUGINS/adb-fastboot/adb-fastboot.plugin.zsh
 source $ZSH_PLUGINS/fzf/fzf.plugin.zsh
 source $ZSH_PLUGINS/git-credential-manager/git-credential-manager.plugin.zsh
 source $ZSH_PLUGINS/mise/mise.plugin.zsh
-source $ZSH_PLUGINS/nvm/nvm.plugin.zsh
 source $ZSH_PLUGINS/zsh-sh-catppuccin/zsh-sh-catppuccin.plugin.zsh
 source $ZSH_PLUGINS/zsh-syntax-hl/zsh-syntax-hl.plugin.zsh # has to happen after catppuccin theme plugin
 source $ZSH_PLUGINS/starship/starship.plugin.zsh

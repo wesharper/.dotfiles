@@ -14,13 +14,8 @@ echo >>~/.bashrc
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>~/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-echo "Removing conflicting default configurations"
-rm -rf ~/.config/ghostty/
-rm -rf ~/.config/lazygit/
-rm -rf ~/.config/nvim/
-
 echo "Installing git-credential-manager"
-sudo pacman -Syu git-credential-manager
+yay -S git-credential-manager-bin
 
 echo "Setting up GPG credential store (needed for git-credential-manager)"
 gpg --gen-key -u "13283469+wesharper@users.noreply.github.com"

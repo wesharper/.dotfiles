@@ -14,6 +14,9 @@ echo >>~/.bashrc
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>~/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+echo "Installing pass"
+sudo pacman -Syu pass
+
 echo "Installing git-credential-manager"
 yay -S git-credential-manager-bin
 

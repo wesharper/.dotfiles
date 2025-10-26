@@ -2,7 +2,7 @@
 set -eoux pipefail
 
 echo "Installing essentials"
-sudo pacman -Syu zsh stow
+sudo pacman -Syu zsh stow ghostty zsh-syntax-highlighting
 
 echo "Installing git-credential-manager"
 yay -S git-credential-manager

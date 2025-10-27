@@ -26,12 +26,12 @@ default-root-container-orientation = 'auto'
 key-mapping.preset = 'qwerty'
 
 [gaps]
-inner.horizontal = 7
-inner.vertical = 7
-outer.left = 6
-outer.bottom = 6
-outer.top = 6
-outer.right = 6
+inner.horizontal = 10
+inner.vertical = 10
+outer.left = 10
+outer.top = 10
+outer.bottom = 10
+outer.right = 10
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -75,10 +75,6 @@ alt-6 = 'workspace 6'
 alt-7 = 'workspace 7'
 alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
-alt-u = 'workspace u'
-alt-i = 'workspace i'
-alt-o = 'workspace o'
-alt-p = 'workspace p'
 alt-0 = 'workspace 0'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
@@ -91,10 +87,6 @@ alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
 alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
 alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
 alt-shift-9 = ['move-node-to-workspace 9', 'workspace 9']
-alt-shift-u = ['move-node-to-workspace u', 'workspace u']
-alt-shift-i = ['move-node-to-workspace i', 'workspace i']
-alt-shift-o = ['move-node-to-workspace o', 'workspace o']
-alt-shift-p = ['move-node-to-workspace p', 'workspace p']
 alt-shift-0 = ['move-node-to-workspace 0', 'workspace 0']
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
@@ -131,8 +123,4 @@ alt-shift-l = ['join-with right', 'mode main']
 7 = 'main'
 8 = 'main'
 9 = 'main'
-u = 1
-i = 1
-o = 1
-p = 1
-0 = 3
+0 = 2

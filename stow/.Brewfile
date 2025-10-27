@@ -11,7 +11,6 @@ brew "fd"
 brew "fzf"
 cask "git-credential-manager"
 brew "lazygit"
-brew "mas"
 brew "mise"
 brew "nvim"
 brew "pass" # used for gpg-based password management (git-credential-manager)
@@ -35,14 +34,12 @@ cask "gitbutler"
 cask "ghostty"
 brew "lazysql"
 brew "lazydocker"
-cask "qflipper"
 mas "Xcode", id: 497799835
 
 # Communications
 cask "discord"
 cask "signal"
 cask "slack"
-cask "whatsapp"
 
 # Productivity
 cask "libreoffice"
@@ -60,9 +57,6 @@ cask "figma"
 # Notes
 cask "obsidian"
 
-# Finance
-mas "Copilot: Track & Budget Money", id: 1447330651
-
 # Security
 cask "1password"
 cask "1password-cli"
@@ -70,8 +64,6 @@ mas "1Password for Safari", id: 1569813296
 
 # Web/Search
 cask "brave-browser"
-cask "nordvpn"
-cask "wifiman"
 
 # Media
 cask "localsend"

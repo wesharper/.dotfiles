@@ -1,4 +1,8 @@
 theme = dark:Catppuccin Mocha,light:Catppuccin Latte
+
+# Dynamic theme colors
+config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+
 font-family = "RobotoMono Nerd Font"
 
 keybind = global:super+grave_accent=toggle_quick_terminal

@@ -1,18 +1,9 @@
 [user]
 	name = Weston Harper
+	email = 13283469+wesharper@users.noreply.github.com
 [includeIf "gitdir:~/dev/rockies/"]
   path = "~/.config/git/rockies/.gitconfig"
 [push]
   autoSetupRemote = true
 [credential]
-	helper = /usr/local/bin/git-credential-manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
-[credential "work"]
-	namespace = work
-	email = weston.harper@rockies.com
-[credential "personal"]
-	namespace = personal
-	email = 13283469+wesharper@users.noreply.github.com
-[credential "https://github.com"]
-	useHttpPath = true
+	helper = /usr/bin/git-credential-manager

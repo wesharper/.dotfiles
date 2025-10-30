@@ -23,7 +23,6 @@ require("lazy").setup({
     lazy = false,
     version = false, -- always use the latest git commit
   },
-  install = { colorscheme = { "catppuccin-mocha", "catppuccin-latte" } },
   checker = {
     enabled = true,
     notify = false,

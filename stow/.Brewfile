@@ -40,6 +40,7 @@ mas "Xcode", id: 497799835
 cask "discord"
 cask "signal"
 cask "slack"
+cask "fastmail"
 
 # Productivity
 cask "libreoffice"

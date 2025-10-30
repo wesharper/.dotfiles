@@ -1,6 +1,6 @@
 # Dotfiles
 
-My personal `dotfiles` directory (MacOS/Bazzite Linux) designed to be used with
+My personal `dotfiles` directory (MacOS/Linux) designed to be used with
 [GNU stow](https://www.gnu.org/software/stow/) to manage symlinks.
 
 Includes a modularized, manually configured, simple `zsh` config _without_

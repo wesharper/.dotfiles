@@ -1,4 +1,4 @@
-if vim.fn.has("macunix") then
+if vim.fn.system("uname") == "Darwin" then
   return {
     "LazyVim/LazyVim",
     opts = {

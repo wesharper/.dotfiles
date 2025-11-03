@@ -1,10 +1,7 @@
-if vim.fn.system("uname") == "Darwin" then
-  return {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-    },
-  }
-else
-  return {}
-end
+return {
+  "LazyVim/LazyVim",
+  opts = {
+    colorscheme = "catppuccin",
+    cond = vim.fn.system("uname") == "Darwin",
+  },
+}

@@ -1,1 +1,0 @@
-/home/chuffed/.config/omarchy/current/theme/neovim.lua

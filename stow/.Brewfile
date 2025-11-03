@@ -4,6 +4,7 @@ cask_args appdir: "~/Applications", require_sha: true
 ##### TAP SOURCES #####
 tap "nikitabobko/tap" # aerospace
 tap "FelixKratz/formulae" # janky-borders
+tap "sst/tap" # opencode
 
 ##### CLI TOOLS #####
 brew "eza"
@@ -34,6 +35,7 @@ cask "gitbutler"
 cask "ghostty"
 brew "lazysql"
 brew "lazydocker"
+brew "opencode"
 mas "Xcode", id: 497799835
 
 # Communications

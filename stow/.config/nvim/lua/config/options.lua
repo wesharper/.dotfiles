@@ -3,6 +3,9 @@
 -- Add any additional options here
 vim.g.snacks_animate = false
 
+-- makes alternate formatters like biome play nice with prettier
+vim.g.lazyvim_prettier_needs_config = true
+
 vim.opt.list = true
 vim.opt.listchars = {
   tab = "»·",

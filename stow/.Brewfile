@@ -7,13 +7,22 @@ tap "FelixKratz/formulae" # janky-borders
 tap "sst/tap" # opencode
 
 ##### CLI TOOLS #####
+brew "colima" # alternative docker daemon
+brew "docker"
+brew "docker-compose"
 brew "eza"
 brew "fd"
 brew "fzf"
+brew "ghostscript" # pdf rendering (lazyvim dependency)
 cask "git-credential-manager"
+brew "imagemagick" # image manipulation (lazyvim dependency)
 brew "lazygit"
+brew "lazydocker"
+brew "lazysql"
+brew "luarocks" # lua package manager (lazyvim dependency)
 brew "mise"
 brew "nvim"
+brew "opencode"
 brew "pass" # used for gpg-based password management (git-credential-manager)
 brew "ripgrep"
 brew "stow"
@@ -28,16 +37,8 @@ cask "font-roboto-mono-nerd-font"
 # Dev Tools
 cask "beekeeper-studio"
 cask "dbeaver-community"
-brew "colima"
-brew "docker"
-brew "docker-compose"
 cask "gitbutler"
 cask "ghostty"
-brew "imagemagick"
-brew "lazysql"
-brew "lazydocker"
-brew "luarocks"
-brew "opencode"
 
 # Communications
 cask "discord"

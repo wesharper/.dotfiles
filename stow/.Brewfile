@@ -6,7 +6,11 @@ tap "nikitabobko/tap" # aerospace
 tap "FelixKratz/formulae" # janky-borders
 tap "sst/tap" # opencode
 
+##### FONTS #####
+cask "font-roboto-mono-nerd-font"
+
 ##### CLI TOOLS #####
+cask "1password-cli"
 brew "colima" # alternative docker daemon
 brew "docker"
 brew "docker-compose"
@@ -32,45 +36,26 @@ brew "zsh-autocomplete"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
-##### FONTS #####
-cask "font-roboto-mono-nerd-font"
-
-# Dev Tools
+##### GUI APPS #####
+cask "1password"
 cask "beekeeper-studio"
+cask "brave-browser"
 cask "dbeaver-community"
+cask "discord"
+cask "fastmail"
+cask "figma"
 cask "gitbutler"
 cask "ghostty"
-
-# Communications
-cask "discord"
-cask "signal"
-cask "slack"
-cask "fastmail"
-
-# Productivity
 cask "libreoffice"
+cask "linear-linear"
+cask "localsend"
+cask "obsidian"
+cask "pinta"
+cask "slack"
+cask "signal"
+cask "spotify", args: {require_sha: false}
 
-# Window Management
+##### MISC #####
 cask "aerospace"
 brew "borders"
-
-# Project Management
-cask "linear-linear"
-
-# Design
-cask "figma"
-
-# Notes
-cask "obsidian"
-
-# Security
-cask "1password"
-cask "1password-cli"
 mas "1Password for Safari", id: 1569813296
-
-# Web/Search
-cask "brave-browser"
-
-# Media
-cask "localsend"
-cask "spotify", args: {require_sha: false}

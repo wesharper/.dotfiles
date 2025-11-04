@@ -20,6 +20,7 @@ brew "lazygit"
 brew "lazydocker"
 brew "lazysql"
 brew "luarocks" # lua package manager (lazyvim dependency)
+brew "mermaid-cli"
 brew "mise"
 brew "nvim"
 brew "opencode"

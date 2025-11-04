@@ -15,12 +15,12 @@ brew "fd"
 brew "fzf"
 brew "ghostscript" # pdf rendering (lazyvim dependency)
 cask "git-credential-manager"
-brew "imagemagick" # image manipulation (lazyvim dependency)
+brew "imagemagick" # image manipulation and rendering (lazyvim dependency)
 brew "lazygit"
 brew "lazydocker"
 brew "lazysql"
-brew "luarocks" # lua package manager (lazyvim dependency)
-brew "mermaid-cli"
+brew "luarocks" # lua package manager (lazyvim mason dependency)
+brew "mermaid-cli" # mermaid diagram renderer (lazyvim dependency)
 brew "mise"
 brew "nvim"
 brew "opencode"

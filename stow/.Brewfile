@@ -35,8 +35,8 @@ cask "gitbutler"
 cask "ghostty"
 brew "lazysql"
 brew "lazydocker"
+brew "luarocks"
 brew "opencode"
-mas "Xcode", id: 497799835
 
 # Communications
 cask "discord"

@@ -1,7 +1,9 @@
 return {
   "LazyVim/LazyVim",
-  opts = {
-    colorscheme = "catppuccin",
-    cond = vim.fn.system("uname") == "Darwin",
-  },
+  opts = function(_, opts)
+    if vim.fn.system("uname") == "Darwin" then
+      opts.colorscheme = "catppuccin"
+    end
+    return opts
+  end,
 }

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Installing fonts"
+yay -S --noconfirm --needed ttf-roboto-mono-nerd
+
 echo "Installing utilities"
 yay -S --noconfirm --needed pass stow git-credential-manager-bin
 

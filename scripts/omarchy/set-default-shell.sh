@@ -5,18 +5,15 @@ if ! command -v zsh &>/dev/null; then
   yay -S --needed --noconfirm zsh
 fi
 
-# Get the path to zsh
-ZSH_PATH=$(which zsh)
-
 # Check if zsh is already the default shell
-if [ "$SHELL" = "$ZSH_PATH" ]; then
+if [ "$SHELL" = "/usr/bin/zsh" ]; then
     echo "Zsh is already the default shell."
     exit 0
 fi
 
 # Add zsh to /etc/shells if not already there
-if ! grep -q "^$ZSH_PATH$" /etc/shells; then
-    echo "$ZSH_PATH" | sudo tee -a /etc/shells >/dev/null
+if ! grep -q "/usr/bin/zsh" /etc/shells; then
+    echo "/usr/bin/zsh" | sudo tee -a /etc/shells >/dev/null
 fi
 
 echo "Setting default shell to zsh"

@@ -1,8 +1,9 @@
 theme = dark:Catppuccin Mocha,light:Catppuccin Latte
-font-family = "RobotoMono Nerd Font"
 
 # Dynamic theme colors
 config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+
+font-family = "RobotoMono Nerd Font"
 
 # prevents "Close Window?" dialog
 confirm-close-surface = false

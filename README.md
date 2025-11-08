@@ -9,3 +9,5 @@ Includes a modularized, manually configured, simple `zsh` configuration _without
 ## Usage
 
 Run `curl https://raw.githubusercontent.com/wesharper/.dotfiles/refs/heads/main/setup.sh | bash`
+
+For optional gaming configuration in Omarchy, run `cd ~/dev/.dotfiles && source ./scripts/omarchy/gaming/main.sh` after the initial setup script is successful.

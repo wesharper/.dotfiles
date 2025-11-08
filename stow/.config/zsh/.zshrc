@@ -40,4 +40,5 @@ compinit
 
 if [[ $(uname) = "Linux" ]]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+  GCM_CREDENTIAL_STORE=gpg
 fi

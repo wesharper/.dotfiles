@@ -2,7 +2,7 @@
 
 # Check if zsh is installed
 if ! command -v zsh &>/dev/null; then
-  yay -S --needed --no-confirm zsh
+  yay -S --needed --noconfirm zsh
 fi
 
 # Get the path to zsh

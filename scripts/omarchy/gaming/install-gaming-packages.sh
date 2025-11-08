@@ -2,5 +2,5 @@
 
 # https://wiki.cachyos.org/configuration/gaming/
 echo "Installing CachyOS meta packages"
-yay -S --noconfirm --needed  cachyos-gaming-meta cachyos-gaming-applications
+sudo pacman -Syu --noconfirm cachyos-gaming-meta cachyos-gaming-applications
 

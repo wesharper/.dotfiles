@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+# set -e
 
 script_directory=$(dirname "$0")
 

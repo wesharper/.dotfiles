@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "Installing RADV drivers"
-yay -Syu --noconfirm --needed vulkan-radeon mesa
-
 # https://wiki.cachyos.org/configuration/gaming/#increase-maximum-shader-cache-size
 if grep -q "AMD_VULKAN_ICD=RADV" /etc/environment; then
   echo "RADV driver environment variable already set"

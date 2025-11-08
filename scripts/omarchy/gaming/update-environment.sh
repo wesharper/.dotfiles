@@ -17,3 +17,4 @@ else
   echo "Increasing shader cache size"
   echo "MESA_SHADER_CACHE_MAX_SIZE=12G" | sudo tee -a /etc/environment
 fi
+

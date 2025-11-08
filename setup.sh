@@ -2,6 +2,8 @@
 
 set -e
 
+cd "$(dirname "$0")" || exit 1
+
 if [[ $(uname) = "Darwin" ]]; then
   echo "Starting MacOS configuration script"
   source ./scripts/darwin/main.sh

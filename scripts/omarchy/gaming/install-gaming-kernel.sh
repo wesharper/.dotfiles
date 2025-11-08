@@ -7,5 +7,10 @@ curl -O https://mirror.cachyos.org/cachyos-repo.tar.xz --output-dir ~/Downloads
 tar xvf ~/Downloads/cachyos-repo.tar.xz -C ~/Downloads
 
 # Run the automated installer
-sudo ~/Downloads/cachyos-repo/cachyos-repo.sh
+current_dir=$(pwd)
+cd ~/Downloads/cachyos-repo || exit
+
+# the cachyos-repo.sh script assumes that the shell is running from within the directory
+sudo ./cachyos-repo.sh
+cd "$current_dir" || exit
 

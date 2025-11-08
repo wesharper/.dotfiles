@@ -1,9 +1,13 @@
 #!/bin/bash
 
-# Check if zsh is installed
-if ! command -v zsh &>/dev/null; then
-  yay -S --needed --noconfirm zsh
-fi
+echo "Installing font"
+yay -S --noconfirm --needed ttf-roboto-mono-nerd
+
+echo "Installing terminal and shell packages"
+yay -S --noconfirm --needed ghostty zsh zsh-syntax-highlighting zsh-autosuggestions
+
+echo "Setting default terminal"
+omarchy-install-terminal ghostty
 
 # Check if zsh is already the default shell
 if [ "$SHELL" = "/usr/bin/zsh" ]; then

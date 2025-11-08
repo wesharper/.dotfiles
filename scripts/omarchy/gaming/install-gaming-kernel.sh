@@ -8,3 +8,4 @@ tar xvf ~/Downloads/cachyos-repo.tar.xz
 
 # Run the automated installer
 sudo ~/Downloads/cachyos-repo.sh
+

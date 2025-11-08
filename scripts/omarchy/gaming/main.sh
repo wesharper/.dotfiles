@@ -1,7 +1,9 @@
 #!/bin/bash
 
-set -eoux pipefail
+set -e
 
-source ./install-gaming-kernel.sh
-source ./install-gaming-packages.sh
-source ./update-environment.sh
+script_directory=$(dirname "$0")
+
+"$script_directory"/install-gaming-kernel.sh
+"$script_directory"/install-gaming-packages.sh
+"$script_directory"/update-environment.sh

@@ -2,4 +2,5 @@
 
 # https://wiki.cachyos.org/configuration/gaming/
 echo "Installing CachyOS meta packages"
-omarchy-pkg-install cachyos-gaming-meta cachyos-gaming-applications
+yay -S --noconfirm --needed  cachyos-gaming-meta cachyos-gaming-applications
+

@@ -1,18 +1,14 @@
 # Dotfiles
 
-My personal `dotfiles` directory (MacOS/Linux) designed to be used with
+My personal `dotfiles` directory (MacOS/Omarchy) designed to be used with
 [GNU stow](https://www.gnu.org/software/stow/) to manage symlinks.
 
-Includes a modularized, manually configured, simple `zsh` config _without_
-`oh-my-zsh` as well as configurations for applications on both MacOS and Linux
-(makes heavy assumptions about Omarchy). Most application specific
-configuration is found in the `.config` folder. `zsh` scripts try to be aware of
-existing installations and current OS to provide some resilience across MacOS
-and Linux.
+Includes a modularized, manually configured, simple `zsh` configuration _without_
+`oh-my-zsh` as well as configurations for applications on both MacOS and Omarchy, with optional gaming configuration on Omarchy using CachyOS.
 
 ## Initialization
 
 - MacOS only - run `xcode-select --install`
 - clone the repo somewhere using the `--recurse-submodules` option for zsh
-  plugins (the `.stowrc` should allow this repo to live anywhere)
-- run `source init.sh` from the repo root - should only be necessary once
+  plugins (the `.stowrc` should allow this repo to live anywhere, although there may be some assumptions about the repo living in `~/dev/.dotfiles`, which is where I keep my configuration)
+- run `source setup.sh` from the repo root

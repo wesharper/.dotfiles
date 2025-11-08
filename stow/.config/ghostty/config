@@ -8,4 +8,3 @@ font-family = "RobotoMono Nerd Font"
 # prevents "Close Window?" dialog
 confirm-close-surface = false
 
-command = /bin/zsh --login --interactive

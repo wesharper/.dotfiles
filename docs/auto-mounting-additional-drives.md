@@ -60,6 +60,10 @@ sudo cryptsetup open --key-file /root/lukskey "$device_name" "$new_drive_name"
 # -m 0 sets aside 0% capacity for other file systems
 sudo mkfs.ext4 -m 0 /dev/mapper/"$new_drive_name"
 
+# Set owner to current user
+current_user="$(whoami)"
+sudo chown -R "$current_user":"$current_user" /mnt/"$new_drive_name"
+
 # use this to wipe the filesystem and change config if needed
 # sudo dd if=/dev/zero of=/dev/mapper/"$new_drive_name" bs=1M count=100
 

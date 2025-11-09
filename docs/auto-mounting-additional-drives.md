@@ -95,7 +95,7 @@ respectively.
 
 ```sh
 # /etc/fstab
-UUID=<filesystem_uuid> /mnt/<new_drive_name> ext4 defaults,noatime,x-systemd.device-timeout=2s 0 2
+UUID=<filesystem_uuid> /mnt/<new_drive_name> ext4 defaults 0 0
 ```
 
 That's it! Reboot and see what happens!

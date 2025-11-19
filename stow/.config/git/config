@@ -7,3 +7,7 @@
   autoSetupRemote = true
 [credential]
 	helper = manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[credential "https://gitlab.com"]
+	useHttpPath = true

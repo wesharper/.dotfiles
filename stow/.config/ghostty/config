@@ -8,3 +8,6 @@ font-family = "RobotoMono Nerd Font"
 # prevents "Close Window?" dialog
 confirm-close-surface = false
 
+
+# Slowdown mouse scrolling
+mouse-scroll-multiplier = 0.95

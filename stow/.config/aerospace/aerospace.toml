@@ -39,7 +39,7 @@ outer.right = 10
 [mode.main.binding]
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
-alt-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
+alt-shift-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
 
 # See: https://nikitabobko.github.io/AeroSpace/goodies#disable-hide-app
 cmd-h = []     # Disable "hide application"

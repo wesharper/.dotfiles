@@ -59,4 +59,3 @@ cask "spotify", args: {require_sha: false}
 ##### MISC #####
 cask "aerospace"
 brew "borders"
-mas "1Password for Safari", id: 1569813296

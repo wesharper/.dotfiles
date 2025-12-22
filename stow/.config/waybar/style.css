@@ -1,6 +1,6 @@
 @import "../omarchy/current/theme/waybar.css";
 
-* {
+waybar#window {
   background-color: transparent;
 
   font-family: "RobotoMono Nerd Font";

@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo "Installing additional applications"
-yay -S --noconfirm --needed fastmail bluetui tmux
+yay -S --noconfirm --needed fastmail bluetui tmux brew-git
 

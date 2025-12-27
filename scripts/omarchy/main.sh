@@ -2,18 +2,9 @@
 
 set -e
 
-if [ -d ~/dev/.dotfiles ]; then
-  echo "Dotfiles repo exists, pulling latest changes"
-  cd ~/dev/.dotfiles || exit 1
-  git pull --recurse-submodules
-else
-  echo "Cloning dotfiles repo"
-  git clone --recurse-submodules https://github.com/wesharper/.dotfiles.git ~/dev/.dotfiles
-fi
+cd "$WORKSPACE/.dotfiles" || exit 1
 
-cd ~/dev/.dotfiles || exit 1
-
-script_directory=~/dev/.dotfiles/scripts/omarchy
+script_directory="$WORKSPACE/.dotfiles/scripts/omarchy"
 
 "$script_directory"/remove-webapps.sh
 "$script_directory"/configure-terminal.sh

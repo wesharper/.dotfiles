@@ -2,11 +2,22 @@
 
 set -e
 
-if [ -d ~/dev ]; then
-  echo "'dev' folder exists, skipping creation"
+WORKSPACE="$HOME/Work"
+
+if [ -d "$WORKSPACE" ]; then
+  echo "Workspace folder exists, skipping creation"
 else
-  echo "Creating 'dev' folder"
-  mkdir ~/dev
+  echo "Creating workspace folder"
+  mkdir "$WORKSPACE" 
+fi
+
+if [ -d "$WORKSPACE/.dotfiles" ]; then
+  echo "Dotfiles repo exists, pulling latest changes"
+  cd "$WORKSPACE/.dotfiles" || exit 1
+  git pull --recurse-submodules
+else
+  echo "Cloning dotfiles repo"
+  git clone --recurse-submodules https://github.com/wesharper/.dotfiles.git "$WORKSPACE/.dotfiles"
 fi
 
 if [[ $(uname) = "Darwin" ]]; then

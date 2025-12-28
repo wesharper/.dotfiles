@@ -5,5 +5,4 @@
 script_directory=$(dirname "$0")
 
 "$script_directory"/install-gaming-packages.sh
-"$script_directory"/configure-limine-bootloader.sh
 "$script_directory"/update-environment.sh

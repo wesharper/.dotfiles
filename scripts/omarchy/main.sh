@@ -12,4 +12,5 @@ script_directory="$WORKSPACE/.dotfiles/scripts/omarchy"
 "$script_directory"/configure-github-auth.sh
 "$script_directory"/configure-web-browser.sh
 "$script_directory"/install-additional-packages.sh
+"$script_directory"/configure-omarchy.sh
 

@@ -3,6 +3,3 @@
 echo "Installing gaming packages"
 yay -Syu --noconfirm --needed vulkan-radeon mesa heroic-games-launcher-bin mangohud lutris
 
-echo "Adding XBOX controller support"
-omarchy-install-xbox-controllers
-

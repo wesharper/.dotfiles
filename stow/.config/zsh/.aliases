@@ -2,6 +2,6 @@ alias ls='eza -lh --group-directories-first --icons=auto'
 alias zshconfig="$EDITOR $ZDOTDIR/.zshrc"
 alias reload="source ~/.zshenv && source $ZDOTDIR/.zshrc"
 alias tmux-reload="tmux source $XDG_CONFIG_HOME/tmux/tmux.conf"
-alias dot="cd ~/dev/.dotfiles"
-alias dev="cd ~/dev"
+alias dot="cd '$WORKSPACE/.dotfiles'"
+alias work="cd '$WORKSPACE'"
 alias appedit="cd ~/.local/share/applications && nvim"

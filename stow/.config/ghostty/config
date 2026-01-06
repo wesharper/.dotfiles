@@ -12,5 +12,4 @@ confirm-close-surface = false
 mouse-scroll-multiplier = 0.95
 
 # Use zsh as default shell
-command=/usr/bin/zsh
-
+shell-integration = zsh

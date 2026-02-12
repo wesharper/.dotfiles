@@ -7,7 +7,5 @@ fi
 # xref: https://github.com/starship/starship/issues/3418
 type starship_zle-keymap-select >/dev/null || \
   {
-    eval "$(/usr/local/bin/starship init zsh)"
+    eval "$(starship init zsh)"
   }
-
-eval "$(starship init zsh)"

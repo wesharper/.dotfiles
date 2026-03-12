@@ -19,6 +19,7 @@ brew "fd"
 brew "fzf"
 brew "ghostscript" # pdf rendering (lazyvim dependency)
 cask "git-credential-manager"
+brew "glab" # gitlab cli
 brew "imagemagick" # image manipulation and rendering (lazyvim dependency)
 brew "lazygit"
 brew "lazydocker"

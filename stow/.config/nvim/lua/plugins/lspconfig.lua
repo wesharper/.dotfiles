@@ -22,6 +22,13 @@ return {
             },
           },
         },
+        svelte = {
+          settings = {
+            typescript = {
+              inlayHints = false,
+            },
+          },
+        },
       },
     },
   },

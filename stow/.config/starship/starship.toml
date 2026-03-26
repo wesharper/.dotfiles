@@ -1,6 +1,5 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-
 add_newline = true
 command_timeout = 300
 format = "[$directory$git_branch$git_status]($style)$character"
@@ -13,7 +12,6 @@ success_symbol = "[❯](bold cyan)"
 truncation_length = 2
 truncation_symbol = "…/"
 repo_root_style = "bold cyan"
-repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
 format = "[$branch]($style) "
@@ -40,6 +38,7 @@ deleted = ""
 "Music" = "󰝚 "
 "Pictures" = " "
 "Work" = "󰲋 "
+"lisachincoaching.com" = " "
 "rockies" = "󱗬 "
 "blake-street" = "󰡒 "
 "cold" = "󱩱 "

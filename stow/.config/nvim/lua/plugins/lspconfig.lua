@@ -3,6 +3,8 @@ return {
     "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
+        "svelte-language-server",
+        "sqruff",
         "tsgo",
       },
     },
@@ -11,6 +13,9 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        sqruff = {
+          enabled = true,
+        },
         vtsls = {
           enabled = false,
         },

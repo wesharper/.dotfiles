@@ -32,6 +32,7 @@ brew "opencode"
 brew "pass" # used for gpg-based password management (git-credential-manager)
 brew "ripgrep"
 brew "stow"
+brew "tiger-vnc"  # vnc client for linux remote desktop
 brew "tmux"
 brew "zsh-autocomplete"
 brew "zsh-autosuggestions"

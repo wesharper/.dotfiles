@@ -12,6 +12,9 @@ return {
         },
       },
     },
+    lazygit = {
+      configure = true,
+    },
     dashboard = {
       preset = {
         header = [[

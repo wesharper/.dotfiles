@@ -43,6 +43,7 @@ cask "1password"
 cask "beekeeper-studio"
 cask "brave-browser"
 cask "bruno" # open-source postman alternative
+cask "cyberduck"
 cask "dbeaver-community"
 cask "discord"
 cask "fastmail"

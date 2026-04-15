@@ -34,6 +34,7 @@ brew "ripgrep"
 brew "stow"
 brew "tiger-vnc"  # vnc client for linux remote desktop
 brew "tmux"
+brew "wireguard-tools"
 brew "zsh-autocomplete"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"

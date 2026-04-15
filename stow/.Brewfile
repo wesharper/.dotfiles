@@ -57,7 +57,6 @@ cask "obsidian"
 cask "pinta"
 cask "slack"
 cask "signal"
-cask "spotify", args: {require_sha: false}
 
 ##### MISC #####
 cask "aerospace"

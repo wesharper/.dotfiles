@@ -11,8 +11,6 @@ cask "font-roboto-mono-nerd-font"
 
 ##### CLI TOOLS #####
 cask "1password-cli"
-brew "docker"
-brew "docker-compose"
 brew "eza"
 brew "fd"
 brew "fzf"

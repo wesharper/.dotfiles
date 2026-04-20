@@ -30,6 +30,7 @@ brew "nvim"
 brew "opencode"
 brew "pass" # used for gpg-based password management (git-credential-manager)
 brew "podman"
+brew "podman-compose"
 brew "ripgrep"
 brew "stow"
 brew "tiger-vnc"  # vnc client for linux remote desktop
@@ -55,6 +56,7 @@ cask "linear-linear"
 cask "localsend"
 cask "obsidian"
 cask "pinta"
+cask "podman-desktop"
 cask "slack"
 cask "signal"
 mas "Wireguard", id: 1451685025

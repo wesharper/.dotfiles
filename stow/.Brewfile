@@ -1,17 +1,16 @@
-##### GLOBAL SETTING
 cask_args appdir: "~/Applications", require_sha: true
 
 ##### TAP SOURCES #####
 tap "nikitabobko/tap" # aerospace
 tap "FelixKratz/formulae" # janky-borders
 tap "sst/tap" # opencode
+brew "mas" # Mac App Store
 
 ##### FONTS #####
 cask "font-roboto-mono-nerd-font"
 
 ##### CLI TOOLS #####
 cask "1password-cli"
-brew "colima" # alternative docker daemon
 brew "docker"
 brew "docker-compose"
 brew "eza"
@@ -30,11 +29,11 @@ brew "mise"
 brew "nvim"
 brew "opencode"
 brew "pass" # used for gpg-based password management (git-credential-manager)
+brew "podman"
 brew "ripgrep"
 brew "stow"
 brew "tiger-vnc"  # vnc client for linux remote desktop
 brew "tmux"
-brew "wireguard-tools"
 brew "zsh-autocomplete"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
@@ -58,6 +57,7 @@ cask "obsidian"
 cask "pinta"
 cask "slack"
 cask "signal"
+mas "Wireguard", id: 1451685025
 
 ##### MISC #####
 cask "aerospace"

@@ -58,6 +58,7 @@ cask "podman-desktop"
 cask "slack"
 cask "signal"
 mas "Wireguard", id: 1451685025
+cask "wireshark-app"
 
 ##### MISC #####
 cask "aerospace"

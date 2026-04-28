@@ -10,7 +10,7 @@ brew "mas" # Mac App Store
 cask "font-roboto-mono-nerd-font"
 
 ##### CLI TOOLS #####
-cask "1password-cli"
+# cask "1password-cli"
 brew "colima"
 brew "docker"
 brew "eza"

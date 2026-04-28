@@ -11,6 +11,8 @@ cask "font-roboto-mono-nerd-font"
 
 ##### CLI TOOLS #####
 cask "1password-cli"
+brew "colima"
+brew "docker"
 brew "eza"
 brew "fd"
 brew "fzf"
@@ -27,8 +29,6 @@ brew "mise"
 brew "nvim"
 brew "opencode"
 brew "pass" # used for gpg-based password management (git-credential-manager)
-brew "podman"
-brew "podman-compose"
 brew "ripgrep"
 brew "stow"
 brew "tiger-vnc"  # vnc client for linux remote desktop
@@ -56,7 +56,6 @@ cask "obsidian"
 cask "pinta"
 cask "plex"
 cask "plexamp"
-cask "podman-desktop"
 cask "slack"
 cask "signal"
 mas "Wireguard", id: 1451685025

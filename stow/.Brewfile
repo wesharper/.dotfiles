@@ -15,6 +15,7 @@ brew "colima"
 brew "docker"
 brew "eza"
 brew "fd"
+brew "ffmpeg"
 brew "fzf"
 brew "ghostscript" # pdf rendering (lazyvim dependency)
 cask "git-credential-manager"

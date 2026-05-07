@@ -21,6 +21,7 @@ brew "ghostscript" # pdf rendering (lazyvim dependency)
 cask "git-credential-manager"
 brew "glab" # gitlab cli
 brew "imagemagick" # image manipulation and rendering (lazyvim dependency)
+brew "jj"
 brew "lazygit"
 brew "lazydocker"
 brew "lazysql"

@@ -58,6 +58,7 @@ cask "obsidian"
 cask "pinta"
 cask "plex"
 cask "plexamp"
+cask "readest"
 cask "slack"
 cask "signal"
 mas "Wireguard", id: 1451685025

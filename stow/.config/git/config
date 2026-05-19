@@ -9,7 +9,7 @@
   ; unset helper to avoid conflicts with unwanted OS system-level helpers (MacOS)
   helper = 
 	helper = manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
 [credential "https://gitlab.com"]
+	useHttpPath = true
+[credential "https://dev.azure.com"]
 	useHttpPath = true

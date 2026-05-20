@@ -1,6 +1,8 @@
 [user]
 	name = Weston Harper
 	email = 13283469+wesharper@users.noreply.github.com
+[init]
+	defaultBranch = main
 [includeIf "gitdir:~/dev/rockies/"]
   path = "~/.config/git/rockies/.gitconfig"
 [push]
@@ -13,5 +15,5 @@
 	useHttpPath = true
 [credential "https://dev.azure.com"]
 	useHttpPath = true
-[init]
-	defaultBranch = main
+[credential "https://codeberg.org"]
+	useHttpPath = true

@@ -17,3 +17,4 @@
 	useHttpPath = true
 [credential "https://codeberg.org"]
 	useHttpPath = true
+  provider = generic

@@ -3,7 +3,7 @@
 	email = 13283469+wesharper@users.noreply.github.com
 [init]
 	defaultBranch = main
-[includeIf "gitdir:~/dev/rockies/"]
+[includeIf "gitdir:~/Work/rockies/"]
   path = "~/.config/git/rockies/.gitconfig"
 [push]
   autoSetupRemote = true

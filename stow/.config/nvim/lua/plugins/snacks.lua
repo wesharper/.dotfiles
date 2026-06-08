@@ -13,7 +13,7 @@ return {
       },
     },
     lazygit = {
-      configure = true,
+      configure = vim.uv.os_uname().sysname ~= "Darwin",
     },
     dashboard = {
       preset = {

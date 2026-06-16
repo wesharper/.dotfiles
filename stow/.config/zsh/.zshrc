@@ -32,6 +32,7 @@ source $ZSH_PLUGINS/mise/mise.plugin.zsh
 source $ZSH_PLUGINS/zsh-sh-catppuccin/zsh-sh-catppuccin.plugin.zsh
 source $ZSH_PLUGINS/zsh-syntax-hl/zsh-syntax-hl.plugin.zsh # has to happen after catppuccin theme plugin
 source $ZSH_PLUGINS/starship/starship.plugin.zsh
+source $ZSH_PLUGINS/pnpm/pnpm.plugin.zsh
 
 # Load completions
 fpath+=$ZSH_COMPLETIONS

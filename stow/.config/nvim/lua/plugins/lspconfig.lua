@@ -12,6 +12,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
+      inlayHints = false,
       servers = {
         sqruff = {
           enabled = true,
@@ -21,18 +22,6 @@ return {
         },
         tsgo = {
           enabled = true,
-          settings = {
-            typescript = {
-              inlayHints = false,
-            },
-          },
-        },
-        svelte = {
-          settings = {
-            typescript = {
-              inlayHints = false,
-            },
-          },
         },
       },
     },

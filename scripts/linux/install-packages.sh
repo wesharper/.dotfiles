@@ -10,6 +10,7 @@ shelly install standard \
   eza \
   fd \
   ffmpeg \
+  flatpak \
   fuse2 \
   fzf \
   ghostscript \
@@ -31,9 +32,12 @@ shelly install standard \
   pass \
   pinta \
   readest \
+  reaper \
   ripgrep \
+  shelly-flatpak-backend \
   signal-desktop \
   stow \
+  tealdeer \
   tmux \
   ttf-roboto-mono-nerd \
   wireguard-tools \
@@ -44,13 +48,15 @@ shelly install standard \
 echo "Installing AUR packages"
 shelly install aur \
   1password \
-  1password-cli \
-  fastmail \
   git-credential-manager \
-  lazysql \
-  linear-bin \
-  plex-desktop \
-  plexamp-bin
+  lazysql
+
+echo "Installing flatpaks"
+shelly install flatpak \
+  com.fastmail.Fastmail \
+  com.plexamp.Plexamp \
+  tv.plex.PlexDesktop \
+  org.wireshark.Wireshark
 
 echo "Installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

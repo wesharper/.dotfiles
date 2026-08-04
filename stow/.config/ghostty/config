@@ -1,7 +1,5 @@
-theme = dark:Catppuccin Mocha,light:Catppuccin Latte
-
 # Dynamic theme colors
-config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+theme = noctalia
 
 font-family = "RobotoMono Nerd Font"
 

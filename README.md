@@ -1,17 +1,14 @@
 # Dotfiles
 
-My personal `dotfiles` directory (MacOS/Omarchy) designed to be used with
+My personal `dotfiles` directory (Mac OS/Arch Linux) designed to be used with
 [GNU stow](https://www.gnu.org/software/stow/) to manage symlinks.
 
 Includes a modularized, manually configured, simple `zsh` configuration
-_without_ `oh-my-zsh` as well as configurations for applications on both MacOS
-and Omarchy, with optional gaming configuration on Omarchy using CachyOS.
+_without_ `oh-my-zsh` as well as configurations for applications on both Mac OS
+and Arch Linux, with some light assumptions about the usage of Cachy OS.
 
-## Usage
+## Quickstart
 
 Run
 `curl https://raw.githubusercontent.com/wesharper/.dotfiles/refs/heads/main/setup.sh | bash`
 
-For optional gaming configuration in Omarchy, run
-`cd ~/dev/.dotfiles && source ./scripts/omarchy/gaming/main.sh` after the
-initial setup script is successful.

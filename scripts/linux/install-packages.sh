@@ -1,13 +1,56 @@
 #!/bin/bash
 
-echo "Installing git-credential-manager and dependencies"
-yay -S --noconfirm --needed pass git-credential-manager-bin
+echo "Installing standard packages"
+shelly install standard \
+  brave-origin-bin \
+  discord \
+  docker \
+  docker-buildx \
+  docker-compose \
+  eza \
+  fd \
+  ffmpeg \
+  fuse2 \
+  fzf \
+  ghostscript \
+  ghostty \
+  ghostty-shell-integration \
+  ghostty-nautilus \
+  ghostty-terminfo \
+  imagemagick \
+  lazygit \
+  lazydocker \
+  libreoffice-fresh \
+  localsend \
+  luarocks \
+  mermaid-cli \
+  mise \
+  neovim \
+  obsidian \
+  opencode \
+  pass \
+  pinta \
+  readest \
+  ripgrep \
+  signal-desktop \
+  stow \
+  tmux \
+  ttf-roboto-mono-nerd \
+  wireguard-tools \
+  yt-dlp \
+  zsh-autosuggestions \
+  zsh-syntax-highlighting
 
-echo "Installing font"
-yay -S --noconfirm --needed ttf-roboto-mono-nerd
-
-echo "Installing terminal and shell packages"
-yay -S --noconfirm --needed ghostty zsh zsh-syntax-highlighting zsh-autosuggestions
+echo "Installing AUR packages"
+shelly install aur \
+  1password \
+  1password-cli \
+  fastmail \
+  git-credential-manager \
+  lazysql \
+  linear-bin \
+  plex-desktop \
+  plexamp-bin
 
 echo "Installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

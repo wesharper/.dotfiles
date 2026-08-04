@@ -2,25 +2,20 @@
 order = ["main"]
 
 [bar.default]
-center = ["workspaces", "spacer_1", "active_window"]
-end = [
-  "media",
-  "spacer_1",
-  "tray",
-  "notifications",
-  "network",
-  "volume",
-  "session",
-]
+position = "top"
+enabled = true
+layer = "top"
+reserve_space = true
+
+thickness = 30
+background_opacity = 0.8
+radius = 0
 margin_edge = 0
 margin_ends = 0
-radius_bottom_left = -10
-radius_bottom_right = -10
-radius_top_left = 0
-radius_top_right = 0
-scale = 1.10
-start = ["launcher", "clock", "spacer_1", "group:g1"]
-thickness = 35
+
+start = ["control-center", "workspaces"]
+center = ["clock", "notifications"]
+end = ["tray"]
 
 [[bar.default.capsule_group]]
 border = ""

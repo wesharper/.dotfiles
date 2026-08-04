@@ -16,7 +16,7 @@
   "NavMode": "sidebar",
   "WindowLastWidth": 1265,
   "WindowLastHeight": 687,
-  "PackageInstallView": "grid",
+  "PackageInstallView": "list",
   "PackageManagementCascadeDelete": true,
   "PackageManagementRemoveConfigs": false,
   "PackageManagementRemoveOptionalDeps": true,

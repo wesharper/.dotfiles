@@ -21,7 +21,6 @@ brew "ghostscript" # pdf rendering (lazyvim dependency)
 cask "git-credential-manager"
 brew "glab" # gitlab cli
 brew "imagemagick" # image manipulation and rendering (lazyvim dependency)
-brew "jj"
 brew "lazygit"
 brew "lazydocker"
 brew "lazysql"
@@ -33,10 +32,8 @@ brew "opencode"
 brew "pass" # used for gpg-based password management (git-credential-manager)
 brew "ripgrep"
 brew "stow"
-brew "tiger-vnc"  # vnc client for linux remote desktop
 brew "tmux"
 brew "yt-dlp"
-brew "zsh-autocomplete"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 

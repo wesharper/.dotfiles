@@ -8,7 +8,7 @@ if [ -d "$WORKSPACE" ]; then
   echo "Workspace folder exists, skipping creation"
 else
   echo "Creating workspace folder"
-  mkdir "$WORKSPACE" 
+  mkdir "$WORKSPACE"
 fi
 
 if [ -d "$WORKSPACE/.dotfiles" ]; then
@@ -22,12 +22,16 @@ fi
 
 if [[ $(uname) = "Darwin" ]]; then
   echo "Starting MacOS configuration script"
-  curl https://raw.githubusercontent.com/wesharper/.dotfiles/refs/heads/main/scripts/darwin/main.sh | zsh
+  source "$WORKSPACE/.dotfiles/scripts/darwin/main.sh"
 fi
 
 if [[ $(uname) = "Linux" ]]; then
-  echo "Starting Omarchy configuration script"
-  curl https://raw.githubusercontent.com/wesharper/.dotfiles/refs/heads/main/scripts/omarchy/main.sh | bash
+  if grep -q "^ID=cachyos" /etc/os-release; then
+    echo "Starting Linux configuration script"
+    source "$WORKSPACE/.dotfiles/scripts/linux/main.sh"
+  else
+    echo "Setup script currently only works on CachyOS, check scripts/linux/main.sh for a manual entry point"
+  fi
 fi
 
 echo "All done!"

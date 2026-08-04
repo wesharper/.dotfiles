@@ -1,0 +1,7 @@
+require("./autostart.lua")
+require("./binds.lua")
+require("./general.lua")
+require("./look-and-feel.lua")
+require("./monitors.lua")
+require("./window-rules.lua")
+require("./workspace-rules.lua")

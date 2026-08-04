@@ -1,7 +1,10 @@
 #!/bin/bash
 
+echo "Synching package databases"
+shelly sync
+
 echo "Installing standard packages"
-shelly install standard \
+shelly install --no-confirm standard \
   brave-origin-bin \
   discord \
   docker \
@@ -19,6 +22,7 @@ shelly install standard \
   ghostty-nautilus \
   ghostty-terminfo \
   imagemagick \
+  jack \
   lazygit \
   lazydocker \
   libreoffice-fresh \
@@ -33,30 +37,30 @@ shelly install standard \
   pinta \
   readest \
   reaper \
+  reapack \
   ripgrep \
   shelly-flatpak-backend \
   signal-desktop \
   stow \
+  sws \
   tealdeer \
   tmux \
   ttf-roboto-mono-nerd \
   wireguard-tools \
+  wireshark-qt \
   yt-dlp \
   zsh-autosuggestions \
   zsh-syntax-highlighting
 
 echo "Installing AUR packages"
-shelly install aur \
-  1password \
-  git-credential-manager \
-  lazysql
+# separate lines allow for manual check prompts
+shelly install --no-confirm aur 1password
+shelly install --no-confirm aur git-credential-manager-bin
 
 echo "Installing flatpaks"
-shelly install flatpak \
-  com.fastmail.Fastmail \
-  com.plexamp.Plexamp \
-  tv.plex.PlexDesktop \
-  org.wireshark.Wireshark
+shelly install flatpak com.fastmail.Fastmail
+shelly install flatpak com.plexamp.Plexamp
+shelly install flatpak tv.plex.PlexDesktop
 
 echo "Installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

@@ -113,7 +113,7 @@ gpu_poll_seconds = 2
 enable_builtin_templates = true
 enable_community_templates = true
 
-builtin_ids = ["gtk3", "gtk4", "kcolorscheme", "qt", "ghostty", "hyprland"]
+builtin_ids = ["gtk3", "gtk4", "kcolorscheme", "qt", "hyprland"]
 
 community_ids = [
   "neovim",

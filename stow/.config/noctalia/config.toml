@@ -87,14 +87,29 @@ source = "wallpaper"
 wallpaper_scheme = "m3-tonal-spot"
 
 [theme.templates]
+enable_builtin_templates = true
+enable_community_templates = true
+
 builtin_ids = [
   "btop",
   "gtk3",
   "gtk4",
   "kcolorscheme",
-  "kitty",
   "qt",
-  "alacritty",
+  "ghostty",
+  "hyprland",
+  "starship",
+]
+
+community_ids = [
+  "neovim",
+  "heroiclauncher",
+  "obs",
+  "discord",
+  "hyprtoolkit",
+  "obsidian",
+  "lazygit",
+  "steam",
 ]
 
 [widget.clock]

@@ -116,7 +116,6 @@ enable_community_templates = true
 builtin_ids = ["gtk3", "gtk4", "kcolorscheme", "qt", "hyprland"]
 
 community_ids = [
-  "neovim",
   "heroiclauncher",
   "obs",
   "discord",

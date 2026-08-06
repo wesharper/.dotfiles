@@ -19,7 +19,7 @@ end = ["tray", "notifications"]
 
 [widget.gap]
 type = "spacer"
-length = 16
+length = 8
 
 [widget.clock]
 format = "{:%A, %B %e - %H:%M}"

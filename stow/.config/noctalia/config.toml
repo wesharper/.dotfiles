@@ -14,16 +14,18 @@ margin_edge = 0
 margin_ends = 0
 
 start = ["control-center", "workspaces"]
-center = ["clock", "notifications"]
-end = ["tray"]
+center = ["clock"]
+end = ["tray", "notifications"]
 
-[[bar.default.capsule_group]]
-border = ""
-fill = "on_secondary"
-id = "g1"
-members = ["temp", "sysmon_2", "sysmon_3"]
-opacity = 1.0
-padding = 6.0
+[widget.clock]
+format = "{:%H:%M %A, %B %e}"
+
+[widget.tray]
+capsule = true
+capsule_fill = "on_secondary"
+
+[widget.workspaces]
+style = "regular"
 
 [idle.behavior.lock]
 timeout = 600
@@ -87,27 +89,24 @@ variant = "default"
 
 [[shell.session.actions]]
 action = "lock_and_suspend"
-countdown_seconds = 3.0
+countdown_seconds = 2.0
 enabled = true
 shortcut = "3"
 variant = "default"
 
 [[shell.session.actions]]
 action = "reboot"
-countdown_seconds = 3.0
+countdown_seconds = 2.0
 enabled = true
 shortcut = "4"
 variant = "default"
 
 [[shell.session.actions]]
 action = "shutdown"
-countdown_seconds = 3.0
+countdown_seconds = 2.0
 enabled = true
 shortcut = "5"
 variant = "destructive"
-
-[system.monitor]
-gpu_poll_seconds = 2
 
 [theme.templates]
 enable_builtin_templates = true
@@ -123,55 +122,3 @@ community_ids = [
   "obsidian",
   "steam",
 ]
-
-[widget.clock]
-color = "secondary"
-format = "{:%H:%M %A %m/%d/%y}"
-
-[widget.launcher]
-color = "secondary"
-
-[widget.media]
-hide_when_no_media = true
-title_scroll = "on_hover"
-
-[widget.network]
-color = "secondary"
-
-[widget.notifications]
-color = "secondary"
-
-[widget.session]
-color = "error"
-
-[widget.spacer_1]
-type = "spacer"
-
-[widget.temp]
-show_label = false
-
-[widget.sysmon_2]
-glyph = "gpu-usage"
-show_lavel = false
-stat = "gpu_temp"
-type = "sysmon"
-
-[widget.sysmon_3]
-glyph = "cpu-2"
-stat = "ram_used"
-type = "sysmon"
-
-[widget.tray]
-capsule = true
-capsule_fill = "on_secondary"
-
-[widget.volume]
-color = "secondary"
-
-[widget.workspaces]
-active_pill_size = 2.5
-capsule = true
-capsule_fill = "on_primary"
-display = "none"
-inactive_pill_size = 1.0
-pill_scale = 0.80

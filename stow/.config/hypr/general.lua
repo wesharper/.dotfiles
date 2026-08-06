@@ -10,6 +10,10 @@ hl.config({
 		},
 	},
 
+	xwayland = {
+		force_zero_scaling = true,
+	},
+
 	misc = {
 		disable_hyprland_logo = true,
 	},

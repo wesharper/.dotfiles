@@ -13,12 +13,20 @@ radius = 0
 margin_edge = 0
 margin_ends = 0
 
-start = ["control-center", "workspaces"]
+start = ["control-center", "gap", "workspaces"]
 center = ["clock"]
 end = ["tray", "notifications"]
 
+[widget.gap]
+type = "spacer"
+length = 16
+
 [widget.clock]
-format = "{:%H:%M %A, %B %e}"
+format = "{:%A, %B %e - %H:%M}"
+
+[widget.control-center]
+custom_image = "~/.config/noctalia/glyphs/arch-linux.png"
+custom_image_colorize = true
 
 [widget.tray]
 capsule = true

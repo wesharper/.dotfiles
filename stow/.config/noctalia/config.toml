@@ -109,11 +109,6 @@ variant = "destructive"
 [system.monitor]
 gpu_poll_seconds = 2
 
-[theme]
-mode = "dark"
-source = "wallpaper"
-wallpaper_scheme = "m3-tonal-spot"
-
 [theme.templates]
 enable_builtin_templates = true
 enable_community_templates = true

@@ -14,7 +14,7 @@ margin_edge = 0
 margin_ends = 0
 
 start = ["control-center", "gap", "workspaces"]
-center = ["clock", "gap", "privacy"]
+center = ["clock", "gap", "weather", "gap", "privacy"]
 end = ["tray", "notifications"]
 
 [widget.gap]
@@ -37,6 +37,12 @@ style = "regular"
 
 [widget.privacy]
 hide_inactive = true
+
+[location]
+address = "Denver, CO"
+
+[weather]
+unit = "imperial"
 
 [idle.behavior.lock]
 timeout = 600
@@ -68,6 +74,13 @@ launch_apps_as_systemd_services = true
 polkit_agent = true
 settings_show_advanced = true
 ui_scale = 1.20
+telemetry_enabled = false
+setup_wizard_enabled = false
+
+[shell.launcher]
+categories = false
+compact = true
+fetch_exchange_rates = false
 
 [shell.greeter_sync]
 auto_sync = false

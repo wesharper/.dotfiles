@@ -4,6 +4,8 @@ return {
     opts = function(_, opts)
       if vim.uv.os_uname().sysname == "Darwin" then
         opts.colorscheme = "catppuccin"
+      else
+        opts.colorscheme = "base16-nvim"
       end
       return opts
     end,

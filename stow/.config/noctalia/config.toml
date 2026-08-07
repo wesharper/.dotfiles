@@ -81,6 +81,7 @@ blur_intensity = 0.8
 tint_intensity = 0.3
 
 [shell]
+avatar_path = "~/Pictures/avatar.jpg"
 clipboard_image_action_command = "satty -f -"
 launch_apps_as_systemd_services = true
 polkit_agent = true

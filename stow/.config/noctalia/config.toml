@@ -1,3 +1,7 @@
+[include]
+autoload = true
+files = ["./theme-templates.toml"]
+
 [bar]
 order = ["main"]
 
@@ -131,18 +135,3 @@ countdown_seconds = 2.0
 enabled = true
 shortcut = "5"
 variant = "destructive"
-
-[theme.templates]
-enable_builtin_templates = true
-enable_community_templates = true
-
-builtin_ids = ["gtk3", "gtk4", "kcolorscheme", "qt", "hyprland"]
-
-community_ids = [
-  "heroiclauncher",
-  "obs",
-  "discord",
-  "hyprtoolkit",
-  "obsidian",
-  "steam",
-]

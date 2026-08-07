@@ -1,0 +1,13 @@
+[theme.templates]
+enable_builtin_templates = true
+enable_community_templates = true
+
+builtin_ids = ["gtk3", "gtk4", "kcolorscheme", "qt", "hyprland"]
+
+community_ids = ["heroiclauncher", "obs", "discord", "hyprtoolkit", "obsidian", "steam"]
+
+# styles neovim using base16 theme and matugen
+[theme.templates.user.nvim]
+input_path = "~/.config/nvim/lua/matugen-template.lua"
+output_path = "~/.config/nvim/lua/matugen.lua"
+post_hook = 'pkill -SIGUSR1 nvim'

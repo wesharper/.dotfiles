@@ -23,6 +23,12 @@ function M.setup()
     base0F = "{{colors.error_container.default.hex}}", -- Deprecated, Embedded Tags
   })
 
+  -- Make selected text stand out more
+  vim.api.nvim_set_hl(0, "Visual", {
+    bg = "{{colors.primary_container.default.hex}}",
+    fg = "{{colors.background.default.hex}}",
+  })
+
   require("lualine").setup({
     options = {
       theme = "base16",

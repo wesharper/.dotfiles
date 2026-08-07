@@ -1,6 +1,4 @@
 "$schema" = 'https://starship.rs/config-schema.json'
-palette = "noctalia"
-
 add_newline = true
 command_timeout = 300
 format = "[$directory$git_branch$git_status]($style)$character"

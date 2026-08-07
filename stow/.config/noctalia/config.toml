@@ -14,7 +14,7 @@ margin_edge = 0
 margin_ends = 0
 
 start = ["control-center", "gap", "workspaces"]
-center = ["clock"]
+center = ["clock", "gap", "privacy"]
 end = ["tray", "notifications"]
 
 [widget.gap]
@@ -34,6 +34,9 @@ capsule_fill = "on_secondary"
 
 [widget.workspaces]
 style = "regular"
+
+[widget.privacy]
+hide_inactive = true
 
 [idle.behavior.lock]
 timeout = 600

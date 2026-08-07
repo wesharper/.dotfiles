@@ -1,5 +1,5 @@
 # Dynamic theme colors
-theme = noctalia
+config-file = ?auto/theme.ghostty
 
 font-family = "RobotoMono Nerd Font"
 

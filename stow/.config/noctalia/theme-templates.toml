@@ -4,7 +4,7 @@ enable_community_templates = true
 
 builtin_ids = ["gtk3", "gtk4", "kcolorscheme", "qt", "hyprland"]
 
-community_ids = ["heroiclauncher", "obs", "discord", "hyprtoolkit", "obsidian", "steam"]
+community_ids = ["heroiclauncher", "obs", "discord", "hyprtoolkit", "obsidian"]
 
 # styles neovim using base16 theme and matugen
 [theme.templates.user.nvim]

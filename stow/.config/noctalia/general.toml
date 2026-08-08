@@ -1,0 +1,6 @@
+[location]
+address = "Denver, CO"
+
+[weather]
+unit = "imperial"
+

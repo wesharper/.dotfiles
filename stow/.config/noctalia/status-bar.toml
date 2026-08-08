@@ -1,0 +1,39 @@
+[bar]
+order = ["main"]
+
+[bar.default]
+position = "top"
+enabled = true
+layer = "top"
+reserve_space = true
+
+thickness = 30
+background_opacity = 0.8
+radius = 0
+margin_edge = 0
+margin_ends = 0
+
+start = ["control-center", "gap", "workspaces"]
+center = ["clock", "gap", "weather", "gap", "privacy"]
+end = ["tray", "notifications"]
+
+[widget.gap]
+type = "spacer"
+length = 8
+
+[widget.clock]
+format = "{:%A, %B %e - %H:%M}"
+
+[widget.control-center]
+custom_image = "~/.config/noctalia/glyphs/arch-linux.png"
+custom_image_colorize = true
+
+[widget.tray]
+capsule = true
+capsule_fill = "on_secondary"
+
+[widget.workspaces]
+style = "regular"
+
+[widget.privacy]
+hide_inactive = true

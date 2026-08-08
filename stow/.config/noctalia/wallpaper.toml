@@ -1,0 +1,8 @@
+[wallpaper]
+enabled = true
+fill_mode = "center"
+transition = ["fade"]
+transition_duration = 1000
+transition_on_startup = false
+fill_color = "#161b1d"
+

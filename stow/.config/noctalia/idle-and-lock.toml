@@ -1,0 +1,18 @@
+[idle.behavior.screen-off]
+timeout = 600
+action = "screen_off"
+enabled = true
+
+[idle.behavior.suspend]
+timeout = 900
+action = "lock_and_suspend"
+enabled = true
+
+[lockscreen]
+enabled = true
+lock_before_suspend = true
+fingerprint = true
+allow_empty_password = false
+blurred_desktop = true
+blur_intensity = 0.8
+tint_intensity = 0.3

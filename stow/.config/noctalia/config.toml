@@ -5,6 +5,6 @@ files = [
   "idle-and-lock.toml",
   "shell.toml",
   "status-bar.toml",
-  "theme-templates.toml",
+  "theme.toml",
   "wallpaper.toml",
 ]
